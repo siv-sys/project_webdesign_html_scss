@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background: #e5e7eb;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 50px;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 1000;
+
+  nav {
+    a {
+      color: white;
+      margin-right: 5px;
+      padding: 5px 10px;
+      font-size: 16px;
+      transition: 0.2s;
+      text-decoration: none;
+
+      &:hover {
+        background: #14ff72cb;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+a {
+  &:hover {
+    background: #14ff72cb;
+    border-radius: 2px;
+  }
+}
+
+.active {
+  background: #14ff72cb;
+  border-radius: 2px;
+}
+
+.image {
+  height: 70vh;
+  width: 100vw;
+
+  img {
+    height: 70vh;
+    width: 100vw;
+    position: absolute;
+    background-size: cover;
+    margin-top: -10vh;
+  }
+}
+
+.info {
+  height: 20vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-evenly;
+
+  .free-shipping,
+  .premium,
+  .trust {
+    height: 100%;
+    width: 10vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+
+    i {
+      font-size: 40px;
+    }
+
+    a {
+      text-decoration: none;
+      background: none;
+      color: black;
+      transition: 0.3s ease-in-out;
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+        color: #14ff72cb;
+      }
+    }
+  }
+}
+
+/* _____________section-content___________ */
+
+.women-sec {
+  height: 300vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  .women-perfume {
+    height: 64vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 40px;
+    margin-top: 40px;
+
+    .perfume-card {
+      width: 200px;
+      background: white;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      padding-bottom: 16px;
+      transition: 0.3s ease-in-out;
+      border-radius: 8px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      &:hover {
+        transform: scale(1.04, 1.04);
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+
+      h4 {
+        text-align: center;
+      }
+
+      .image-card {
+        height: 45%;
+
+        img {
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      .star {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 24px;
+      }
+
+      .small {
+        font-size: 12px;
+      }
+
+      .save {
+        color: red;
+      }
+
+      .rrp {
+        font-size: 14px;
+        color: gray;
+      }
+    }
+  }
+
+  .women-brand {
+    text-align: center;
+    margin: 40px 0;
+  }
+}
+
+.men-tittle {
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.tittle-one,
+.tittle-three {
+  a {
+    &:hover {
+      background: none;
+    }
+  }
+}
