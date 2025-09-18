@@ -386,6 +386,7 @@ header {
     align-items: center;
     gap: 4px;
     transition: 0.3s ease-in-out;
+    border-radius: 8px;
 
     &:hover {
       transform: scale(1.04);
