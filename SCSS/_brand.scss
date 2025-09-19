@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #E5E7EB;
+}
+
+header {
+  width: 100%;
+  max-width: 100%;
+  padding-left: 50px;
+  height: 10vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+
+  nav {
+    a {
+      color: white;
+      margin-right: 5px;
+      padding: 5px 10px;
+      font-size: 16px;
+      transition: 0.2s;
+      text-decoration: none;
+
+      &:hover {
+        background: #14ff72cb;
+        border-radius: 2px;
+      }
+    }
+  }
+}
+
+.active {
+  background: #14ff72cb;
+  border-radius: 2px;
+}
+
+.poster {
+  height: 80vh;
+  width: 100vw;
+  margin-top: -10vh;
+  background: gray;
+  background-image: url(https://i.pinimg.com/1200x/da/83/8b/da838ba7dac254f4d8581b4b43eea99f.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.all-brands-sec {
+  height: 910vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.head-brands {
+  height: 20vh;
+  width: 100vw;
+  background: rgb(183, 121, 121);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tittle-two {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  a {
+    text-decoration: none;
+    color: black;
+    border-left: 1px solid black;
+    padding-left: 8px;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      background: none;
+    }
+
+    &:nth-child(1),
+    &:nth-child(2),
+    &:nth-child(3) {
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      font-family: serif;
+    }
+
+    &:nth-child(6),
+    &:nth-child(7) {
+      font-family: sans-serif;
+    }
+  }
+}
+
+.dolce,
+.calvin,
+.bvlgari,
+.christiandior,
+.YVESSAINTLAURENT,
+.BURBERRY,
+.GUERLAIN,
+.GIORGIO-ARMANI,
+.VERSACE,
+.GIVENCHY {
+  height: 75vh;
+  margin: 40px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.logo {
+  height: 20vh;
+  width: 100%;
+  display: flex;
+
+  &-left {
+    width: 12vw;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &-right {
+    height: 100%;
+    width: 100%;
+    padding-left: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.image-logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #14ff72cb;
+
+  img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+
+.card-brand {
+  height: 55vh;
+  width: 100%;
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.scroll-card {
+  height: 100%;
+  display: flex;
+  margin-left: 24px;
+  margin-right: 24px;
+  padding-left: 16px;
+  align-items: center;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.scroll-item {
+  display: inline-block;
+  width: 200px;
+  margin-right: 24px;
+  vertical-align: top;
+}
+
+.perfume-card {
+  width: 200px;
+  background: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding-bottom: 16px;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  white-space: normal;
+
+  &:hover {
+    transform: scale(1.04, 1.04);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+      rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  }
+}
+
+.brand-section {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 32px;
+  margin-bottom: 48px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ________FOOTER _____________*/
+
+.home-foot {
+  height: 50vh;
+  width: 100vw;
+  background: #000;
+}
