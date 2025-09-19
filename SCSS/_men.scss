@@ -100,7 +100,7 @@ a {
 /* _____________section-content___________ */
 
 .women-sec {
-  height: 300vh;
+  height: 316vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -189,4 +189,11 @@ a {
       background: none;
     }
   }
+}
+
+/* Footer */
+.home-foot {
+  height: 50vh;
+  width: 100vw;
+  background: #000;
 }
