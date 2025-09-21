@@ -9,7 +9,6 @@ body {
   flex-direction: column;
   background: #e5e7eb;
 }
-
 header {
   width: 100%;
   max-width: 100%;
@@ -99,15 +98,15 @@ a {
 
 /* _____________section-content___________ */
 
-.women-sec {
+.men-sec {
   height: 316vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
 
-  .women-perfume {
-    height: 64vh;
+  .men-perfume {
+    height: 68vh;
     width: 100vw;
     display: flex;
     justify-content: space-evenly;
@@ -116,9 +115,10 @@ a {
     margin-top: 40px;
 
     .perfume-card {
-      width: 200px;
+      width: 240px;
       background: white;
       height: 100%;
+      box-sizing: border-box;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -139,11 +139,11 @@ a {
       }
 
       .image-card {
-        height: 45%;
-
+        height: 48%;
         img {
           height: 100%;
           width: 100%;
+          padding: 16px;
         }
       }
 
@@ -154,6 +154,38 @@ a {
         width: 100%;
         height: 24px;
         color: #f9cb35;
+      }
+
+      .btn {
+        height: 40px;
+        width: 100%;
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+
+        .btn-a {
+          padding: 8px 16px;
+          font-size: 10px;
+          text-decoration: none;
+          // border: 1px solid black;
+          border-radius: 16px;
+          color: black;
+          background: rgba(128, 128, 128, 0.162);
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          transition: 0.3s ease-in-out;
+          
+          &:hover {
+            // background: none;
+            transform: scale(1.05, 1.05);
+            background: #14ff72cb;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+          }
+        }
       }
 
       .small {
@@ -171,7 +203,7 @@ a {
     }
   }
 
-  .women-brand {
+  .men-brand {
     text-align: center;
     margin: 40px 0;
   }
@@ -197,3 +229,5 @@ a {
   width: 100vw;
   background: #000;
 }
+
+@media screen and (max-width:750px) {}
