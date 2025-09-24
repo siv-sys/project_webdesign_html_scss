@@ -1,14 +1,45 @@
-
 body {
   display: flex;
   flex-direction: column;
-  background: #e5e7eb;
+  background: white;
+}
+
+.value {
+  text-align: center;
+  background: white;
+  padding-bottom: 40px;
+  font-size: 40px;
+  color: #4a4a6a;
 }
 
 .image {
-  height: 100vh;
+  height: 96vh;
   width: 100vw;
-  background: #ffffff;
+  background: white;
+
+  .on-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-light);
+    text-align: center;
+    width: 80%;
+    color: white;
+  }
+
+  .on-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4rem;
+    margin: 0;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .on-text p {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+  }
 
   img {
     height: 100vh;
@@ -41,8 +72,9 @@ body {
     border-radius: 16px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.3s ease-in-out;
-    &:hover{
-      transform: scale(1.05,1.05);
+
+    &:hover {
+      transform: scale(1.05, 1.05);
     }
 
     i {
@@ -55,7 +87,7 @@ body {
       color: black;
 
       &:hover {
-           color: #302aaf;
+        color: #302aaf;
       }
     }
   }
@@ -106,6 +138,7 @@ body {
 
       .image-card {
         height: 48%;
+
         img {
           height: 100%;
           width: 100%;
@@ -121,19 +154,21 @@ body {
         height: 24px;
         color: #f9cb35;
       }
-      .name{
+
+      .name {
         font-size: 12px;
       }
+
       .btn {
         height: 40px;
         width: 100%;
-        
+
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
         gap: 16px;
-        
+
 
         .btn-a {
           padding: 8px 16px;
@@ -142,18 +177,18 @@ body {
           // border: 1px solid black;
           border-radius: 16px;
           color: black;
-          border: 1px solid #302aaf ;
+          border: 1px solid #302aaf;
           background: rgba(128, 128, 128, 0.162);
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           transition: 0.3s ease-in-out;
-          
+
           &:hover {
             // background: none;
             transform: scale(1.05, 1.05);
             background: #302aaf;
             color: white;
             box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-            
+
           }
         }
       }
@@ -176,6 +211,11 @@ body {
   .men-brand {
     text-align: center;
     margin: 40px 0;
+    h1{
+      color: #4a4a6a;
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
   }
 }
 
@@ -196,4 +236,76 @@ body {
 /* Footer */
 
 
-@media screen and (max-width:750px) {}
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .free-shipping,
+    .premium,
+    .trust {
+      width: 28vw;
+      margin-bottom: 10px;
+    }
+  }
+
+  .men-sec .men-perfume .perfume-card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    height: auto;
+
+    .free-shipping,
+    .premium,
+    .trust {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  .men-sec .men-perfume {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .image {
+    height: 46vh;
+
+    img {
+      margin-top: 0;
+      height: 60vh;
+      margin-top: -18vh;
+    }
+
+    .on-text .h1 {
+      font-size: 10px;
+    }
+  }
+
+  .men-sec {
+    height: 460vh;
+    gap: 0;
+
+    .men-perfume {
+      display: flex;
+      flex-wrap: wrap;
+      height: 120vh;
+      padding: 0 10px;
+
+      .perfume-card {
+        width: 170px;
+        height: 380px;
+
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+
+}

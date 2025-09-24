@@ -278,39 +278,6 @@ header nav a:hover {
     width: 100%;
   }
 }
-/* Responsive */
-@media screen and (max-width: 999px) {
-  header {
-    padding-left: 50px;
-  }
-  .item .content {
-    left: 50px;
-  }
-  .content .tittle,
-  .content .name {
-    font-size: 70px;
-  }
-  .content .des {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 690px) {
-  header a {
-    font-size: 14px;
-    margin-right: 0;
-  }
-  .item .content {
-    top: 40%;
-  }
-  .content .tittle,
-  .content .name {
-    font-size: 45px;
-  }
-  .content .btn button {
-    padding: 6px 10px;
-    font-size: 10px;
-  }
-}
 /* home description */
 .home-des {
   height: 160vh;
@@ -454,25 +421,37 @@ header nav a:hover {
   padding: 24px 40px;
   text-align: center;
 }
-.home-foot .footer-one, .home-foot .footer-two, .home-foot .footer-three, .home-foot .footer-four {
+.home-foot .footer-one,
+.home-foot .footer-two,
+.home-foot .footer-three,
+.home-foot .footer-four {
   width: 25vw;
   height: 100%;
   display: flex;
   gap: 4px;
   flex-direction: column;
 }
-.home-foot .footer-one h2, .home-foot .footer-two h2, .home-foot .footer-three h2, .home-foot .footer-four h2 {
+.home-foot .footer-one h2,
+.home-foot .footer-two h2,
+.home-foot .footer-three h2,
+.home-foot .footer-four h2 {
   margin-bottom: 8px;
   color: white;
   font-size: 28px;
 }
-.home-foot .footer-one a, .home-foot .footer-two a, .home-foot .footer-three a, .home-foot .footer-four a {
+.home-foot .footer-one a,
+.home-foot .footer-two a,
+.home-foot .footer-three a,
+.home-foot .footer-four a {
   text-decoration: none;
   font-weight: 50;
   color: white;
   transition: 0.3s ease-in-out;
 }
-.home-foot .footer-one a:hover, .home-foot .footer-two a:hover, .home-foot .footer-three a:hover, .home-foot .footer-four a:hover {
+.home-foot .footer-one a:hover,
+.home-foot .footer-two a:hover,
+.home-foot .footer-three a:hover,
+.home-foot .footer-four a:hover {
   background: none;
   color: #1E90FF;
   text-decoration: underline;
@@ -514,16 +493,234 @@ header nav a:hover {
   color: white;
 }
 
+@media screen and (max-width: 690px) {
+  header a {
+    font-size: 14px;
+    margin-right: 0;
+  }
+  .item .content {
+    top: 40%;
+  }
+  .content .tittle,
+  .content .name {
+    font-size: 45px;
+  }
+  .content .btn button {
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+}
+/* Responsive */
+@media screen and (max-width: 999px) {
+  header {
+    padding-left: 50px;
+  }
+  .item .content {
+    left: 50px;
+  }
+  .content .tittle,
+  .content .name {
+    font-size: 70px;
+  }
+  .content .des {
+    font-size: 16px;
+  }
+}
+/* iPhone Responsive (428px and below) */
+@media screen and (max-width: 428px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+    /* Logo Section */
+    /* Header */
+    /* Carousel */
+    /* Home Description */
+    /* Perfume Cards */
+    /* Footer */
+    /* Under Footer */
+  }
+  body .logo-website {
+    height: 10vh;
+  }
+  body .logo-website .head-left {
+    width: 100%;
+    padding: 0;
+    gap: 4px;
+    text-align: center;
+    padding-left: 20px;
+  }
+  body .logo-website .head-left h3 {
+    font-size: 16px;
+  }
+  body .logo-website .head-left .logo-perfume {
+    height: 48px;
+    width: 48px;
+  }
+  body .logo-website .head-right {
+    width: 200px;
+    display: flex;
+    justify-content: flex-end;
+  }
+  body .logo-website .head-right button {
+    width: 60px;
+    height: 24px;
+    font-size: 10px;
+  }
+  body .logo-website .head-right .log-in {
+    margin-right: 10px;
+  }
+  body .logo-website .head-right .sign-up {
+    margin-right: 10px;
+  }
+  body header {
+    height: auto;
+    padding: 8px;
+    padding-left: 20px;
+  }
+  body header nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+  }
+  body header nav a {
+    font-size: 13px;
+    padding: 4px 6px;
+  }
+  body .carousel {
+    width: 100%;
+    height: 65vh;
+    margin-top: -15.8vh;
+  }
+  body .carousel .list .item {
+    width: 140px;
+    height: 200px;
+  }
+  body .carousel .list .item .content {
+    width: 90%;
+    left: 5%;
+    top: 45%;
+    text-align: center;
+  }
+  body .carousel .list .item .content .tittle,
+  body .carousel .list .item .content .name {
+    text-align: left;
+    font-size: 26px;
+  }
+  body .carousel .list .item .content .des {
+    text-align: left;
+    width: 200px;
+    font-size: 12px;
+    margin: 10px 0;
+  }
+  body .carousel .list .item .content .btn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    gap: 8px;
+  }
+  body .carousel .list .item .content .btn button {
+    padding: 6px 12px;
+    font-size: 11px;
+  }
+  body .home-des {
+    height: auto;
+    padding: 20px 12px;
+  }
+  body .home-des .tittle-one a {
+    font-size: 10px;
+  }
+  body .home-des .tittle-one h2 {
+    font-size: 14px;
+    color: #4a4a6a;
+  }
+  body .home-des .tittle-two {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 12px;
+  }
+  body .home-des .tittle-three a {
+    font-size: 10px;
+  }
+  body .home-des .tittle-three h2 {
+    font-size: 18px;
+    color: #4a4a6a;
+  }
+  body .women-perfume {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 20px 0;
+  }
+  body .women-perfume .perfume-card {
+    width: 80%;
+    height: 44 0px;
+  }
+  body .home-foot {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+  }
+  body .home-foot .footer-one,
+  body .home-foot .footer-two,
+  body .home-foot .footer-three,
+  body .home-foot .footer-four {
+    width: 100%;
+    text-align: center;
+  }
+  body .under-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+    text-align: center;
+  }
+  body .under-footer .contact-social {
+    justify-content: center;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
-  background: #e5e7eb;
+  background: white;
+}
+
+.value {
+  text-align: center;
+  background: white;
+  padding-bottom: 40px;
+  font-size: 40px;
+  color: #4a4a6a;
 }
 
 .image {
-  height: 100vh;
+  height: 96vh;
   width: 100vw;
-  background: #ffffff;
+  background: white;
+}
+.image .on-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-light);
+  text-align: center;
+  width: 80%;
+  color: white;
+}
+.image .on-text h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 4rem;
+  margin: 0;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+.image .on-text p {
+  font-size: 1.5rem;
+  margin-top: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
 }
 .image img {
   height: 100vh;
@@ -676,6 +873,11 @@ body {
   text-align: center;
   margin: 40px 0;
 }
+.men-sec .men-brand h1 {
+  color: #4a4a6a;
+  margin-bottom: 10px;
+  font-size: 40px;
+}
 
 .men-tittle {
   margin-top: 80px;
@@ -688,6 +890,66 @@ body {
 }
 
 /* Footer */
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    width: 28vw;
+    margin-bottom: 10px;
+  }
+  .men-sec .men-perfume .perfume-card {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    height: auto;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .men-sec .men-perfume {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .image {
+    height: 46vh;
+  }
+  .image img {
+    margin-top: 0;
+    height: 60vh;
+    margin-top: -18vh;
+  }
+  .image .on-text .h1 {
+    font-size: 10px;
+  }
+  .men-sec {
+    height: 460vh;
+    gap: 0;
+  }
+  .men-sec .men-perfume {
+    display: flex;
+    flex-wrap: wrap;
+    height: 120vh;
+    padding: 0 10px;
+  }
+  .men-sec .men-perfume .perfume-card {
+    width: 170px;
+    height: 380px;
+  }
+  .men-sec .men-perfume .perfume-card:nth-child(5) {
+    display: none;
+  }
+}
 body {
   display: flex;
   flex-direction: column;
@@ -917,7 +1179,7 @@ body {
 }
 
 .card-brand {
-  height: 48vh;
+  height: 46vh;
   width: 100%;
 }
 
@@ -939,7 +1201,6 @@ body {
   padding-left: 16px;
   align-items: center;
   overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
   -ms-overflow-style: none;
   white-space: nowrap;

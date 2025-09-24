@@ -18,10 +18,12 @@
     align-items: center;
     gap: 16px;
     padding-left: 40px;
-    h3{
+
+    h3 {
       color: #8B7043;
       font-family: 'Playfair Display', serif;
     }
+
     .logo-perfume {
       height: 64px;
       width: 64px;
@@ -44,34 +46,38 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    
 
-    button{
+
+    button {
       width: 100px;
       height: 32px;
       border-radius: 16px;
       border: none;
       display: flex;
       justify-content: center;
-      align-items: center ;
+      align-items: center;
       font-weight: bold;
       cursor: pointer;
     }
-    .sign-up{
+
+    .sign-up {
       background: white;
       margin-right: 24px;
-      &:hover{
+
+      &:hover {
         background: #1E90FF;
         border: 2px solid #1E90FF;
         color: white;
       }
     }
-    .log-in{
+
+    .log-in {
       background: none;
       border: 2px solid #1E90FF;
       color: white;
       margin-right: 40px;
-      &:hover{
+
+      &:hover {
         background: #1E90FF;
         color: white;
         border-color: #1E90FF;
@@ -93,7 +99,7 @@ header {
 
   nav {
     a {
-      color: white  ;
+      color: white;
       margin-right: 5px;
       padding: 5px 10px;
       font-size: 16px;
@@ -317,52 +323,6 @@ header {
   }
 }
 
-/* Responsive */
-@media screen and (max-width: 999px) {
-  header {
-    padding-left: 50px;
-  }
-
-  .item .content {
-    left: 50px;
-  }
-
-  .content {
-
-    .tittle,
-    .name {
-      font-size: 70px;
-    }
-
-    .des {
-      font-size: 16px;
-    }
-  }
-}
-
-@media screen and (max-width: 690px) {
-  header a {
-    font-size: 14px;
-    margin-right: 0;
-  }
-
-  .item .content {
-    top: 40%;
-  }
-
-  .content {
-
-    .tittle,
-    .name {
-      font-size: 45px;
-    }
-
-    .btn button {
-      padding: 6px 10px;
-      font-size: 10px;
-    }
-  }
-}
 
 /* home description */
 .home-des {
@@ -524,29 +484,36 @@ header {
 /* Footer */
 .home-foot {
   background: black;
-  height: 44vh; 
+  height: 44vh;
   width: 100vw;
   display: flex;
   gap: 10px;
   padding: 24px 40px;
   text-align: center;
-  .footer-one,.footer-two, .footer-three, .footer-four{
+
+  .footer-one,
+  .footer-two,
+  .footer-three,
+  .footer-four {
     width: 25vw;
     height: 100%;
     display: flex;
     gap: 4px;
     flex-direction: column;
-    h2{
+
+    h2 {
       margin-bottom: 8px;
       color: white;
       font-size: 28px;
     }
-    a{
+
+    a {
       text-decoration: none;
       font-weight: 50;
       color: white;
       transition: 0.3s ease-in-out;
-      &:hover{
+
+      &:hover {
         background: none;
         color: #1E90FF;
         text-decoration: underline;
@@ -557,7 +524,8 @@ header {
   }
 
 }
-.under-footer{
+
+.under-footer {
   height: 100px;
   background: #000;
   border-top: 3px solid white;
@@ -565,30 +533,276 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  .copyright{
+
+  .copyright {
     color: white;
   }
-  .contact-social{
+
+  .contact-social {
     display: flex;
     gap: 16px;
-    
-    .icon-cercle{
-    height: 40px;
-    width: 40px;
-    border: 2px solid white;
-    color: white;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.3s ease-in-out;
-    font-size: 16px;
-    &:hover{
-      background: #1E90FF;
+
+    .icon-cercle {
+      height: 40px;
+      width: 40px;
+      border: 2px solid white;
       color: white;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      font-size: 16px;
+
+      &:hover {
+        background: #1E90FF;
+        color: white;
+      }
     }
   }
-  }
-  
+
 }
+
+@media screen and (max-width: 690px) {
+  header a {
+    font-size: 14px;
+    margin-right: 0;
+  }
+
+  .item .content {
+    top: 40%;
+  }
+
+  .content {
+
+    .tittle,
+    .name {
+      font-size: 45px;
+    }
+
+    .btn button {
+      padding: 6px 10px;
+      font-size: 10px;
+    }
+  }
+}
+
+
+/* Responsive */
+@media screen and (max-width: 999px) {
+  header {
+    padding-left: 50px;
+  }
+
+  .item .content {
+    left: 50px;
+  }
+
+  .content {
+
+    .tittle,
+    .name {
+      font-size: 70px;
+    }
+
+    .des {
+      font-size: 16px;
+    }
+  }
+}
+
+/* iPhone Responsive (428px and below) */
+@media screen and (max-width: 428px) {
+  body {
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 14px;
+
+
+  /* Logo Section */
+  .logo-website {
+    height: 10vh;
+
+    .head-left {
+      width: 100%;
+      padding: 0;
+      gap: 4px;
+      text-align: center;
+      padding-left: 20px;
+
+      h3 {
+        font-size: 16px;
+      }
+
+      .logo-perfume {
+        height: 48px;
+        width: 48px;
+      }
+    }
+
+    .head-right {
+      width: 200px;
+      display: flex;
+
+      justify-content: flex-end;
+
+      button {
+        width: 60px;
+        height: 24px;
+        font-size: 10px;
+      }
+
+      .log-in {
+        margin-right: 10px;
+      }
+
+      .sign-up {
+        margin-right: 10px;
+      }
+    }
+  }
+
+
+  /* Header */
+  header {
+    height: auto;
+    padding: 8px;
+    padding-left: 20px;
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 6px;
+
+      a {
+        font-size: 13px;
+        padding: 4px 6px;
+      }
+    }
+
+  }
+
+
+  /* Carousel */
+  .carousel {
+    width: 100%;
+    height: 65vh;
+    margin-top: -15.8vh;
+
+    .list .item {
+      width: 140px;
+      height: 200px;
+
+      .content {
+        width: 90%;
+        left: 5%;
+        top: 45%;
+        text-align: center;
+
+        .tittle,
+        .name {
+          text-align: left;
+          font-size: 26px;
+        }
+
+        .des {
+          text-align: left;
+          width: 200px;
+          font-size: 12px;
+          margin: 10px 0;
+        }
+
+        .btn {
+          display: flex;
+          flex-wrap: wrap;
+          margin-top: 10px;
+          gap: 8px;
+
+          button {
+            padding: 6px 12px;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+  }
+
+  /* Home Description */
+  .home-des {
+    height: auto;
+    padding: 20px 12px;
+
+    .tittle-one a {
+      font-size: 10px;
+    }
+
+    .tittle-one h2 {
+      font-size: 14px;
+      color: #4a4a6a;
+    }
+
+    .tittle-two {
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+    }
+
+    .tittle-three a {
+      font-size: 10px;
+    }
+
+    .tittle-three h2 {
+      font-size: 18px;
+      color: #4a4a6a;
+
+    }
+  }
+
+  /* Perfume Cards */
+  .women-perfume {
+    flex-direction: column;
+    height: auto;
+    gap: 40px;
+    padding: 20px 0;
+
+    .perfume-card {
+      width: 80%;
+      height: 44 0px;
+    }
+  }
+
+
+  /* Footer */
+  .home-foot {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    width: 100%;
+
+    .footer-one,
+    .footer-two,
+    .footer-three,
+    .footer-four {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
+
+
+  /* Under Footer */
+  .under-footer {
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .under-footer .contact-social {
+    justify-content: center;
+  }
+}  }
