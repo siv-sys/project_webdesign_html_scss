@@ -337,6 +337,10 @@ header {
   justify-content: center;
   align-items: center;
 
+  h2 {
+    color: #4a4a6a;
+  }
+
   a {
     text-decoration: none;
     color: black;
@@ -400,6 +404,10 @@ header {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+
+  h2 {
+    color: #4a4a6a;
+  }
 
   a {
     text-decoration: none;
@@ -612,7 +620,7 @@ header {
   }
 }
 
-/* iPhone Responsive (428px and below) */
+/* iPhone Responsive (429px and below) */
 @media screen and (max-width: 428px) {
   body {
     width: 100%;
@@ -620,189 +628,200 @@ header {
     font-size: 14px;
 
 
-  /* Logo Section */
-  .logo-website {
-    height: 10vh;
-
-    .head-left {
+    /* Logo Section */
+    .logo-website {
+      height: 10vh;
       width: 100%;
-      padding: 0;
-      gap: 4px;
-      text-align: center;
+
+      .head-left {
+        width: 100%;
+        padding: 0;
+        gap: 4px;
+        text-align: center;
+        padding-left: 20px;
+
+        h3 {
+          font-size: 16px;
+        }
+
+        .logo-perfume {
+          height: 48px;
+          width: 48px;
+        }
+      }
+
+      .head-right {
+        width: 200px;
+        display: flex;
+
+        justify-content: flex-end;
+
+        button {
+          width: 60px;
+          height: 24px;
+          font-size: 10px;
+        }
+
+        .log-in {
+          margin-right: 10px;
+        }
+
+        .sign-up {
+          margin-right: 10px;
+        }
+      }
+    }
+
+
+    /* Header */
+    header {
+      height: auto;
+      padding: 8px;
       padding-left: 20px;
 
-      h3 {
-        font-size: 16px;
-      }
+      nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
 
-      .logo-perfume {
-        height: 48px;
-        width: 48px;
-      }
-    }
-
-    .head-right {
-      width: 200px;
-      display: flex;
-
-      justify-content: flex-end;
-
-      button {
-        width: 60px;
-        height: 24px;
-        font-size: 10px;
-      }
-
-      .log-in {
-        margin-right: 10px;
-      }
-
-      .sign-up {
-        margin-right: 10px;
-      }
-    }
-  }
-
-
-  /* Header */
-  header {
-    height: auto;
-    padding: 8px;
-    padding-left: 20px;
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 6px;
-
-      a {
-        font-size: 13px;
-        padding: 4px 6px;
-      }
-    }
-
-  }
-
-
-  /* Carousel */
-  .carousel {
-    width: 100%;
-    height: 65vh;
-    margin-top: -15.8vh;
-
-    .list .item {
-      width: 140px;
-      height: 200px;
-
-      .content {
-        width: 90%;
-        left: 5%;
-        top: 45%;
-        text-align: center;
-
-        .tittle,
-        .name {
-          text-align: left;
-          font-size: 26px;
+        a {
+          font-size: 13px;
+          padding: 4px 6px;
         }
+      }
 
-        .des {
-          text-align: left;
-          width: 200px;
-          font-size: 12px;
-          margin: 10px 0;
-        }
+    }
 
-        .btn {
-          display: flex;
-          flex-wrap: wrap;
-          margin-top: 10px;
-          gap: 8px;
 
-          button {
-            padding: 6px 12px;
-            font-size: 11px;
+    /* Carousel */
+    .carousel {
+      width: 100%;
+      height: 65vh;
+      margin-top: -15.8vh;
+
+      .list .item {
+        width: 140px;
+        height: 200px;
+
+        .content {
+          width: 90%;
+          left: 5%;
+          top: 45%;
+          text-align: center;
+
+          .tittle,
+          .name {
+            text-align: left;
+            font-size: 26px;
+          }
+
+          .des {
+            text-align: left;
+            width: 200px;
+            font-size: 12px;
+            margin: 10px 0;
+          }
+
+          .btn {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            gap: 8px;
+
+            button {
+              padding: 6px 12px;
+              font-size: 11px;
+            }
           }
         }
       }
     }
-  }
 
-  /* Home Description */
-  .home-des {
-    height: auto;
-    padding: 20px 12px;
-
-    .tittle-one a {
-      font-size: 10px;
-    }
-
-    .tittle-one h2 {
-      font-size: 14px;
-      color: #4a4a6a;
-    }
-
-    .tittle-two {
-      flex-wrap: wrap;
-      gap: 8px;
-      font-size: 12px;
-    }
-
-    .tittle-three a {
-      font-size: 10px;
-    }
-
-    .tittle-three h2 {
-      font-size: 18px;
-      color: #4a4a6a;
-
-    }
-  }
-
-  /* Perfume Cards */
-  .women-perfume {
-    flex-direction: column;
-    height: auto;
-    gap: 40px;
-    padding: 20px 0;
-
-    .perfume-card {
-      width: 80%;
-      height: 44 0px;
-    }
-  }
-
-
-  /* Footer */
-  .home-foot {
-    flex-direction: column;
-    height: auto;
-    padding: 20px;
-    gap: 20px;
-    width: 100%;
-
-    .footer-one,
-    .footer-two,
-    .footer-three,
-    .footer-four {
+    /* Home Description */
+    .home-des {
+      height: auto;
       width: 100%;
+      padding: 20px 12px;
+      background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
+
+      .tittle-one a {
+        font-size: 10px;
+      }
+
+      .tittle-one h2 {
+        font-size: 14px;
+        color: #4a4a6a;
+      }
+
+      .tittle-two {
+        display: flex;
+        flex-wrap: wrap;
+        height: 32vh;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 0;
+        a{
+          border: none;
+          text-decoration: underline;
+        }
+      }
+
+      .tittle-three a {
+        font-size: 10px;
+      }
+
+      .tittle-three h2 {
+        font-size: 18px;
+        color: #4a4a6a;
+
+      }
+    }
+
+    /* Perfume Cards */
+    .women-perfume {
+      flex-direction: column;
+      height: auto;
+      gap: 40px;
+      padding: 20px 0;
+
+      .perfume-card {
+        width: 80%;
+        height: 44 0px;
+      }
+    }
+
+
+    /* Footer */
+    .home-foot {
+      flex-direction: column;
+      height: auto;
+      padding: 20px;
+      gap: 20px;
+      width: 100%;
+
+      .footer-one,
+      .footer-two,
+      .footer-three,
+      .footer-four {
+        width: 100%;
+        text-align: center;
+      }
+    }
+
+
+
+    /* Under Footer */
+    .under-footer {
+      flex-direction: column;
+      height: auto;
+      padding: 16px;
+      gap: 12px;
       text-align: center;
     }
+
+    .under-footer .contact-social {
+      justify-content: center;
+    }
   }
-
-
-
-  /* Under Footer */
-  .under-footer {
-    flex-direction: column;
-    height: auto;
-    padding: 16px;
-    gap: 12px;
-    text-align: center;
-  }
-
-  .under-footer .contact-social {
-    justify-content: center;
-  }
-}  }
+}

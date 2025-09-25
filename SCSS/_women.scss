@@ -137,3 +137,106 @@ body {
 
 
 /* Footer */
+
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .free-shipping,
+    .premium,
+    .trust {
+      width: 28vw;
+      margin-bottom: 10px;
+    }
+  }
+
+  .men-sec .men-perfume .perfume-card {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    height: auto;
+
+    .free-shipping,
+    .premium,
+    .trust {
+      width: 80%;
+      margin: 10px auto;
+    }
+  }
+
+  .men-sec .men-perfume {
+    gap: 16px;
+  }
+}
+
+@media screen and (max-width: 428px) {
+  .image {
+    height: 60vh;
+
+    img {
+      margin-top: 0;
+      height: 60vh;
+      margin-top: -6vh;
+    }
+
+    .on-text {
+      margin-top: -16vh;
+
+      h1 {
+        font-size: 24px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+  }
+  .info{
+    background: white;
+      .free-shipping,
+  .premium,
+  .trust {
+    height: 12vh;
+  }
+  }
+
+  .women-sec {
+    height: auto;
+    gap: 0;
+
+    .women-perfume {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: auto;
+      padding: 0 8px;
+      justify-content: space-around;
+      gap: 0;
+      margin-top: 10px;
+      
+      .perfume-card {
+        max-width: 170px;
+        height: 380px;
+        margin-bottom: 20px;
+        .btn{
+        display: flex;
+        margin-top: 8px;
+        gap: 4px;
+        .btn-a{
+          padding: 4px 8px;
+
+        }
+      }
+        &:nth-child(5) {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -291,6 +291,9 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
 }
+.tittle-one h2 {
+  color: #4a4a6a;
+}
 .tittle-one a {
   text-decoration: none;
   color: black;
@@ -342,6 +345,9 @@ header nav a:hover {
   justify-content: center;
   align-items: center;
   margin-bottom: 40px;
+}
+.tittle-three h2 {
+  color: #4a4a6a;
 }
 .tittle-three a {
   text-decoration: none;
@@ -526,7 +532,7 @@ header nav a:hover {
     font-size: 16px;
   }
 }
-/* iPhone Responsive (428px and below) */
+/* iPhone Responsive (429px and below) */
 @media screen and (max-width: 428px) {
   body {
     width: 100%;
@@ -542,6 +548,7 @@ header nav a:hover {
   }
   body .logo-website {
     height: 10vh;
+    width: 100%;
   }
   body .logo-website .head-left {
     width: 100%;
@@ -626,7 +633,9 @@ header nav a:hover {
   }
   body .home-des {
     height: auto;
+    width: 100%;
     padding: 20px 12px;
+    background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
   }
   body .home-des .tittle-one a {
     font-size: 10px;
@@ -636,9 +645,16 @@ header nav a:hover {
     color: #4a4a6a;
   }
   body .home-des .tittle-two {
+    display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    height: 32vh;
     font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+  }
+  body .home-des .tittle-two a {
+    border: none;
+    text-decoration: underline;
   }
   body .home-des .tittle-three a {
     font-size: 10px;
@@ -922,29 +938,54 @@ body {
 }
 @media screen and (max-width: 428px) {
   .image {
-    height: 46vh;
+    height: 60vh;
   }
   .image img {
     margin-top: 0;
     height: 60vh;
-    margin-top: -18vh;
+    margin-top: -6vh;
   }
-  .image .on-text .h1 {
-    font-size: 10px;
+  .image .on-text {
+    margin-top: -16vh;
+  }
+  .image .on-text h1 {
+    font-size: 24px;
+  }
+  .image .on-text p {
+    font-size: 16px;
+  }
+  .info {
+    background: white;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    height: 12vh;
   }
   .men-sec {
-    height: 460vh;
+    height: auto;
     gap: 0;
   }
   .men-sec .men-perfume {
     display: flex;
     flex-wrap: wrap;
-    height: 120vh;
+    height: auto;
     padding: 0 10px;
+    justify-content: space-around;
   }
   .men-sec .men-perfume .perfume-card {
-    width: 170px;
+    width: 45%;
+    max-width: 170px;
     height: 380px;
+    margin-bottom: 20px;
+  }
+  .men-sec .men-perfume .perfume-card .btn {
+    display: flex;
+    margin-top: 8px;
+    gap: 4px;
+  }
+  .men-sec .men-perfume .perfume-card .btn .btn-a {
+    padding: 4px 8px;
   }
   .men-sec .men-perfume .perfume-card:nth-child(5) {
     display: none;
@@ -1063,6 +1104,93 @@ body {
 }
 
 /* Footer */
+@media screen and (max-width: 1024px) {
+  .info {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    width: 28vw;
+    margin-bottom: 10px;
+  }
+  .men-sec .men-perfume .perfume-card {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .info {
+    flex-direction: column;
+    height: auto;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    width: 80%;
+    margin: 10px auto;
+  }
+  .men-sec .men-perfume {
+    gap: 16px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .image {
+    height: 60vh;
+  }
+  .image img {
+    margin-top: 0;
+    height: 60vh;
+    margin-top: -6vh;
+  }
+  .image .on-text {
+    margin-top: -16vh;
+  }
+  .image .on-text h1 {
+    font-size: 24px;
+  }
+  .image .on-text p {
+    font-size: 16px;
+  }
+  .info {
+    background: white;
+  }
+  .info .free-shipping,
+  .info .premium,
+  .info .trust {
+    height: 12vh;
+  }
+  .women-sec {
+    height: auto;
+    gap: 0;
+  }
+  .women-sec .women-perfume {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: auto;
+    padding: 0 8px;
+    justify-content: space-around;
+    gap: 0;
+    margin-top: 10px;
+  }
+  .women-sec .women-perfume .perfume-card {
+    max-width: 170px;
+    height: 380px;
+    margin-bottom: 20px;
+  }
+  .women-sec .women-perfume .perfume-card .btn {
+    display: flex;
+    margin-top: 8px;
+    gap: 4px;
+  }
+  .women-sec .women-perfume .perfume-card .btn .btn-a {
+    padding: 4px 8px;
+  }
+  .women-sec .women-perfume .perfume-card:nth-child(5) {
+    display: none;
+  }
+}
 html {
   scroll-behavior: smooth;
 }
@@ -1098,8 +1226,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.head-brands h1 {
+  color: #4a4a6a;
+}
 
-.tittle-two {
+.tittle-brand {
   height: 40px;
   display: flex;
   justify-content: center;
@@ -1108,7 +1239,7 @@ body {
   overflow: hidden;
   white-space: nowrap;
 }
-.tittle-two a {
+.tittle-brand a {
   text-decoration: none;
   color: black;
   border-left: 1px solid black;
@@ -1116,16 +1247,16 @@ body {
   position: relative;
   transition: color 0.3s ease-in-out;
 }
-.tittle-two a:hover {
+.tittle-brand a:hover {
   background: none;
 }
-.tittle-two a:nth-child(1), .tittle-two a:nth-child(2), .tittle-two a:nth-child(3) {
+.tittle-brand a:nth-child(1), .tittle-brand a:nth-child(2), .tittle-brand a:nth-child(3) {
   font-family: Helvetica, Arial, sans-serif;
 }
-.tittle-two a:nth-child(4), .tittle-two a:nth-child(5) {
+.tittle-brand a:nth-child(4), .tittle-brand a:nth-child(5) {
   font-family: serif;
 }
-.tittle-two a:nth-child(6), .tittle-two a:nth-child(7) {
+.tittle-brand a:nth-child(6), .tittle-brand a:nth-child(7) {
   font-family: sans-serif;
 }
 
@@ -1253,4 +1384,221 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ________FOOTER _____________*//*# sourceMappingURL=style.css.map */
+/* ________FOOTER _____________*/
+@media (max-width: 1024px) {
+  .poster {
+    height: 60vh;
+  }
+  .head-brands {
+    height: 15vh;
+    padding: 8px;
+  }
+}
+@media (max-width: 768px) {
+  .poster {
+    height: 50vh;
+  }
+  .head-brands {
+    height: auto;
+    padding: 16px;
+  }
+  .tittle-brand {
+    flex-wrap: wrap;
+    gap: 8px;
+    font-size: 14px;
+  }
+  .dolce,
+  .calvin,
+  .bvlgari,
+  .christiandior,
+  .YVESSAINTLAURENT,
+  .BURBERRY,
+  .GUERLAIN,
+  .GIORGIO-ARMANI,
+  .VERSACE,
+  .GIVENCHY {
+    height: auto;
+    margin: 16px;
+  }
+  .scroll-item {
+    width: 160px;
+  }
+  .perfume-card {
+    width: 160px;
+  }
+  .image-card {
+    height: 200px;
+  }
+}
+@media (max-width: 480px) {
+  /* Poster */
+  .poster {
+    height: 40vh;
+    margin-top: 0;
+    background-position: top center;
+  }
+  /* Header section */
+  .head-brands {
+    font-size: 14px;
+    padding: 12px;
+    height: auto;
+  }
+  .tittle-brand {
+    flex-direction: column;
+    gap: 6px;
+    font-size: 13px;
+    line-height: 1.4;
+    text-align: center;
+  }
+  /* Logo area */
+  .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 12px;
+    padding: 8px 0;
+  }
+  .logo-left {
+    width: 100%;
+    justify-content: center;
+  }
+  .logo-right {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .image-logo {
+    height: 80px;
+    width: 80px;
+    border: 4px solid #302aaf;
+  }
+  /* Brand sections */
+  .dolce,
+  .calvin,
+  .bvlgari,
+  .christiandior,
+  .YVESSAINTLAURENT,
+  .BURBERRY,
+  .GUERLAIN,
+  .GIORGIO-ARMANI,
+  .VERSACE,
+  .GIVENCHY {
+    height: auto;
+    margin: 16px 8px;
+    border-radius: 12px;
+  }
+  /* Scrollable perfume cards */
+  .scroll-card {
+    padding: 12px;
+    gap: 12px;
+  }
+  .scroll-item {
+    width: 140px;
+    margin-right: 12px;
+  }
+  .perfume-card {
+    width: 140px;
+    font-size: 12px;
+  }
+  .image-card {
+    height: 160px;
+  }
+  /* Brand section wrapper */
+  .brand-section {
+    padding: 16px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+  }
+}
+@media (max-width: 428px) {
+  /* Poster */
+  .poster {
+    height: 40vh;
+    margin-top: 0;
+    background-position: top center;
+    margin-top: -6vh;
+  }
+  /* Header Section */
+  .all-brands-sec {
+    height: auto;
+    /* Logo Section */
+    /* Brand Sections */
+    /* Perfume Cards - Horizontal Scroll */
+    /* Brand Section Wrapper */
+  }
+  .all-brands-sec .head-brands {
+    font-size: 14px;
+    padding: 10px;
+    height: 48vh;
+  }
+  .all-brands-sec .head-brands .tittle-brand {
+    display: flex;
+    flex-wrap: wrap;
+    height: 38vh;
+    text-align: center;
+  }
+  .all-brands-sec .head-brands .tittle-brand a {
+    text-align: center;
+    border: none;
+    text-decoration: underline;
+  }
+  .all-brands-sec .logo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    gap: 12px;
+    padding: 8px 0;
+  }
+  .all-brands-sec .logo-left {
+    width: 100%;
+    justify-content: center;
+  }
+  .all-brands-sec .logo-right {
+    width: 100%;
+    padding: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .all-brands-sec .image-logo {
+    height: 80px;
+    width: 80px;
+    border: 4px solid #302aaf;
+  }
+  .all-brands-sec .dolce,
+  .all-brands-sec .calvin,
+  .all-brands-sec .bvlgari,
+  .all-brands-sec .christiandior,
+  .all-brands-sec .YVESSAINTLAURENT,
+  .all-brands-sec .BURBERRY,
+  .all-brands-sec .GUERLAIN,
+  .all-brands-sec .GIORGIO-ARMANI,
+  .all-brands-sec .VERSACE,
+  .all-brands-sec .GIVENCHY {
+    height: auto;
+    margin: 16px 8px;
+    border-radius: 12px;
+  }
+  .all-brands-sec .scroll-card {
+    padding: 12px;
+    gap: 12px;
+  }
+  .all-brands-sec .scroll-item {
+    width: 140px;
+    margin-right: 12px;
+  }
+  .all-brands-sec .perfume-card {
+    width: 140px;
+    font-size: 12px;
+  }
+  .all-brands-sec .image-card {
+    height: 160px;
+  }
+  .all-brands-sec .brand-section {
+    padding: 16px;
+    margin-bottom: 32px;
+    border-radius: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
