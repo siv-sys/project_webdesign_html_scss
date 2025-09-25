@@ -331,6 +331,7 @@ header {
 }
 
 .tittle-one {
+  background: rgb(183, 121, 121);
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -361,6 +362,7 @@ header {
 }
 
 .tittle-two {
+  background: rgb(183, 121, 121);
   height: 40px;
   display: flex;
   justify-content: center;
@@ -707,7 +709,6 @@ header {
         .content {
           width: 90%;
           left: 5%;
-          top: 45%;
           text-align: center;
 
           .tittle,
@@ -742,26 +743,34 @@ header {
     .home-des {
       height: auto;
       width: 100%;
-      padding: 20px 12px;
       background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
 
-      .tittle-one a {
-        font-size: 10px;
-      }
+      .tittle-one {
 
-      .tittle-one h2 {
-        font-size: 14px;
-        color: #4a4a6a;
+        width: 100%;
+
+
+        a {
+          font-size: 10px;
+        }
+
+         h2 {
+          font-size: 14px;
+          color: #4a4a6a;
+        }
       }
 
       .tittle-two {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         height: 32vh;
+        gap: 10px;
         font-size: 12px;
         text-align: center;
-        margin-top: 0;
-        a{
+        margin: 0;
+        padding: 0;
+
+        a {
           border: none;
           text-decoration: underline;
         }

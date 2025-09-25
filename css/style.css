@@ -285,6 +285,7 @@ header nav a:hover {
 }
 
 .tittle-one {
+  background: rgb(183, 121, 121);
   height: 80px;
   display: flex;
   flex-direction: column;
@@ -311,6 +312,7 @@ header nav a:hover {
 }
 
 .tittle-two {
+  background: rgb(183, 121, 121);
   height: 40px;
   display: flex;
   justify-content: center;
@@ -607,7 +609,6 @@ header nav a:hover {
   body .carousel .list .item .content {
     width: 90%;
     left: 5%;
-    top: 45%;
     text-align: center;
   }
   body .carousel .list .item .content .tittle,
@@ -634,8 +635,10 @@ header nav a:hover {
   body .home-des {
     height: auto;
     width: 100%;
-    padding: 20px 12px;
     background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
+  }
+  body .home-des .tittle-one {
+    width: 100%;
   }
   body .home-des .tittle-one a {
     font-size: 10px;
@@ -646,11 +649,13 @@ header nav a:hover {
   }
   body .home-des .tittle-two {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     height: 32vh;
+    gap: 10px;
     font-size: 12px;
     text-align: center;
-    margin-top: 0;
+    margin: 0;
+    padding: 0;
   }
   body .home-des .tittle-two a {
     border: none;
