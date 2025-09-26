@@ -693,6 +693,10 @@ header nav a:hover {
     width: 80%;
     height: 44 0px;
   }
+  body .women-perfume .perfume-card .small {
+    text-align: center;
+    padding: 0 8px;
+  }
   body .home-foot {
     flex-direction: column;
     height: auto;
@@ -722,6 +726,14 @@ body {
   display: flex;
   flex-direction: column;
   background: white;
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+body.fade-out {
+  opacity: 0;
+  transform: translateY(20px);
 }
 
 .value {
@@ -1637,9 +1649,14 @@ body {
   }
 }
 .contact-head {
-  height: 20vh;
+  height: 40vh;
   width: 100vw;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2588235294);
+  margin-top: -10vh;
 }
 .contact-head h1 {
   margin-bottom: 24px;
@@ -1793,4 +1810,137 @@ body {
 .contact .map .map-box iframe {
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 1024px) {
+  .contact {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "contact-left" "contact-right" "map";
+  }
+  .contact .contact-left {
+    padding: 20px;
+  }
+  .contact .contact-left h1 {
+    font-size: 32px;
+  }
+  .contact .contact-right {
+    padding: 20px;
+  }
+  .contact .contact-right .contact-form {
+    max-width: 100%;
+  }
+  .contact .map .map-box {
+    width: 90%;
+  }
+  .contact-head p {
+    padding: 0 10vw;
+  }
+}
+/* Mobile */
+@media (max-width: 600px) {
+  .contact-head {
+    height: auto;
+    padding: 40px 10px;
+    margin-top: 0;
+  }
+  .contact-head h1 {
+    font-size: 24px;
+  }
+  .contact-head p {
+    padding: 0 5vw;
+    font-size: 14px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact .contact-left {
+    padding: 16px;
+  }
+  .contact .contact-left h1 {
+    font-size: 24px;
+  }
+  .contact .contact-left p {
+    font-size: 14px;
+  }
+  .contact .contact-right {
+    padding: 16px;
+  }
+  .contact .map .map-box {
+    width: 100%;
+    height: 250px;
+  }
+  .contact .contact-right .contact-form {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .contact .contact-right .contact-form h2 {
+    font-size: 18px;
+  }
+  .contact .contact-right .contact-form input,
+  .contact .contact-right .contact-form textarea {
+    font-size: 13px;
+  }
+  .contact .contact-right .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+@media (max-width: 428px) {
+  .contact-head {
+    height: auto;
+    padding: 40px 10px;
+    margin-top: 0;
+    margin-top: -6vh;
+  }
+  .contact-head h1 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  .contact-head p {
+    padding: 0 5vw;
+    font-size: 14px;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: 180vh;
+  }
+  .contact .contact-left {
+    padding: 16px;
+    padding-left: 28px;
+  }
+  .contact .contact-left h1 {
+    font-size: 24px;
+  }
+  .contact .contact-left p {
+    font-size: 14px;
+  }
+  .contact .contact-right {
+    padding: 16px;
+  }
+  .contact .map .map-box {
+    width: 100%;
+    height: 250px;
+    padding: 24px;
+  }
+  .contact .map .map-box iframe {
+    height: 500px;
+  }
+  .contact .contact-right .contact-form {
+    padding: 20px;
+    border-radius: 12px;
+  }
+  .contact .contact-right .contact-form h2 {
+    font-size: 18px;
+  }
+  .contact .contact-right .contact-form input,
+  .contact .contact-right .contact-form textarea {
+    font-size: 13px;
+  }
+  .contact .contact-right .contact-form button {
+    font-size: 14px;
+    padding: 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
