@@ -751,7 +751,7 @@ body.fade-out {
 }
 .image .on-text {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: var(--text-light);
@@ -993,6 +993,7 @@ body.fade-out {
   }
   .image .on-text {
     margin-top: -16vh;
+    top: 6%;
   }
   .image .on-text h1 {
     font-size: 24px;
@@ -1256,6 +1257,7 @@ body {
 }
 
 .all-brands-sec {
+  background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
   height: 820vh;
   width: 100vw;
   display: flex;
@@ -1316,7 +1318,8 @@ body {
 .GIORGIO-ARMANI,
 .VERSACE,
 .GIVENCHY {
-  height: 70vh;
+  height: 66vh;
+  background: #faf7f2;
   margin: 40px;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -1396,7 +1399,7 @@ body {
 .perfume-card {
   width: 200px;
   background: white;
-  height: auto;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1411,8 +1414,17 @@ body {
   transform: scale(1.04, 1.04);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
+.perfume-card h4 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+.perfume-card p {
+  text-align: center;
+  padding: 0 8px;
+}
 .perfume-card .image-card {
-  height: 280px;
+  height: 240px;
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
@@ -1624,19 +1636,47 @@ body {
   .all-brands-sec .VERSACE,
   .all-brands-sec .GIVENCHY {
     height: auto;
-    margin: 16px 8px;
+    margin: 16px 16px;
     border-radius: 12px;
   }
-  .all-brands-sec .scroll-card {
-    padding: 12px;
+  .all-brands-sec .dolce .card-brand .scroll-card,
+  .all-brands-sec .calvin .card-brand .scroll-card,
+  .all-brands-sec .bvlgari .card-brand .scroll-card,
+  .all-brands-sec .christiandior .card-brand .scroll-card,
+  .all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card,
+  .all-brands-sec .BURBERRY .card-brand .scroll-card,
+  .all-brands-sec .GUERLAIN .card-brand .scroll-card,
+  .all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card,
+  .all-brands-sec .VERSACE .card-brand .scroll-card,
+  .all-brands-sec .GIVENCHY .card-brand .scroll-card {
+    padding: 0px;
     gap: 12px;
   }
-  .all-brands-sec .scroll-item {
+  .all-brands-sec .dolce .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .calvin .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .christiandior .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item,
+  .all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item {
     width: 140px;
     margin-right: 12px;
   }
-  .all-brands-sec .perfume-card {
+  .all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card,
+  .all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card {
     width: 140px;
+    height: 260px;
     font-size: 12px;
   }
   .all-brands-sec .image-card {

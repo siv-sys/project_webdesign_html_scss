@@ -17,6 +17,7 @@ body {
 }
 
 .all-brands-sec {
+  background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
   height: 820vh;
   width: 100vw;
   display: flex;
@@ -87,7 +88,8 @@ body {
 .GIORGIO-ARMANI,
 .VERSACE,
 .GIVENCHY {
-  height: 70vh;
+  height: 66vh;
+  background: #faf7f2;
   margin: 40px;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -158,6 +160,7 @@ body {
   -ms-overflow-style: none;
   white-space: nowrap;
 
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -173,7 +176,7 @@ body {
 .perfume-card {
   width: 200px;
   background: white;
-  height: auto;
+  height: 320px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -190,8 +193,19 @@ body {
       rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    padding: 0 8px;
+  }
+
   .image-card {
-    height: 280px;
+    height: 240px;
     width: 100%;
     padding: 10px;
     margin-bottom: 16px;
@@ -441,25 +455,34 @@ body {
     .VERSACE,
     .GIVENCHY {
       height: auto;
-      margin: 16px 8px;
+      margin: 16px 16px;
       border-radius: 12px;
+
+      .card-brand {
+        .scroll-card {
+          padding: 0px;
+          gap: 12px;
+
+          .scroll-item {
+            width: 140px;
+            margin-right: 12px;
+
+            .perfume-card {
+              width: 140px;
+              height: 260px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
     }
 
     /* Perfume Cards - Horizontal Scroll */
-    .scroll-card {
-      padding: 12px;
-      gap: 12px;
-    }
 
-    .scroll-item {
-      width: 140px;
-      margin-right: 12px;
-    }
 
-    .perfume-card {
-      width: 140px;
-      font-size: 12px;
-    }
+
+
+
 
     .image-card {
       height: 160px;
