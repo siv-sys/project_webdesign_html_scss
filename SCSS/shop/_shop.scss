@@ -10,13 +10,12 @@
 .shop-info{
     height: 80vh;
     width: 100vw;
-    background: white;  
+    background: white;
     display: flex;
     padding: 24px 50px;
     .info-left{
         height: 100%;
         width: 100%;
-        background: #000;
         display: flex;
         flex-direction: column;
         .info-left-image{
@@ -27,6 +26,33 @@
         .info-left-rate{
             height: 80px;
             width: 100%;
+            display: flex;
+            gap: 4px;
+
+            .i-have-it, .i-had-it, .i-want-it{
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-areas:
+                'it-left it-right'
+                'it-bottom it-bottom';
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 2fr 1fr;
+                .it-left{
+                    grid: it-left;
+                    background: gray;
+                }
+                .it-right{
+                    grid: it-right;
+                    background: black;
+                }
+                .it-bottom{
+                    grid: it-bottom;
+                    
+                    width: 100%;
+                }
+
+            }
         }
     }
     .info-right{
