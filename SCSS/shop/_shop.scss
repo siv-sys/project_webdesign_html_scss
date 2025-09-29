@@ -1,0 +1,36 @@
+.shop-tittle{
+    padding-left: 50px;
+    font-size: 32px;
+    background: white;
+    span{
+        font-size: 28px;
+        color: rgb(90, 90, 90);
+    }
+}
+.shop-info{
+    height: 80vh;
+    width: 100vw;
+    background: white;  
+    display: flex;
+    padding: 24px 50px;
+    .info-left{
+        height: 100%;
+        width: 100%;
+        background: #000;
+        display: flex;
+        flex-direction: column;
+        .info-left-image{
+            height: 100%;
+            width: 100%;
+            background: blue;
+        }
+        .info-left-rate{
+            height: 80px;
+            width: 100%;
+        }
+    }
+    .info-right{
+        height: 100%;
+        width: 100%;
+    }
+}

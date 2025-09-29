@@ -12,7 +12,8 @@
   align-items: center;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.268) 50%, rgba(0, 0, 0, 0.268) 50%);
   z-index: 1100;
-  input{
+
+  input {
     height: 44px;
     width: 500px;
     padding-left: 24px;
@@ -21,10 +22,12 @@
     outline: none;
     font-size: 18px;
   }
-  i{
+
+  i {
     font-size: 24px;
     margin-left: -48px;
   }
+
   .head-left {
     height: 100%;
     width: 50vw;
@@ -599,7 +602,6 @@ header {
   }
 
   .content {
-
     .tittle,
     .name {
       font-size: 45px;
@@ -768,7 +770,7 @@ header {
           font-size: 10px;
         }
 
-         h2 {
+        h2 {
           font-size: 14px;
           color: #4a4a6a;
         }
@@ -777,7 +779,7 @@ header {
       .tittle-two {
         display: flex;
         flex-direction: column;
-        height: 32vh;
+        height: 38vh;
         gap: 10px;
         font-size: 12px;
         text-align: center;
@@ -811,7 +813,8 @@ header {
       .perfume-card {
         width: 80%;
         height: 44 0px;
-        .small{
+
+        .small {
           text-align: center;
           padding: 0 8px;
         }
