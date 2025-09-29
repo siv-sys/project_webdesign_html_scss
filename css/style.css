@@ -387,10 +387,14 @@ header nav a:hover {
   justify-content: space-evenly;
   align-items: center;
 }
-.women-perfume .perfume-card {
+.women-perfume a {
+  text-decoration: none;
+  color: black;
+}
+.women-perfume a .perfume-card {
   width: 220px;
   background: white;
-  height: 100%;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -398,20 +402,20 @@ header nav a:hover {
   transition: 0.3s ease-in-out;
   border-radius: 8px;
 }
-.women-perfume .perfume-card:hover {
+.women-perfume a .perfume-card:hover {
   transform: scale(1.04);
 }
-.women-perfume .perfume-card h4 {
+.women-perfume a .perfume-card h4 {
   text-align: center;
 }
-.women-perfume .perfume-card .image-card {
+.women-perfume a .perfume-card .image-card {
   height: 50%;
 }
-.women-perfume .perfume-card .image-card img {
+.women-perfume a .perfume-card .image-card img {
   height: 100%;
   width: 100%;
 }
-.women-perfume .perfume-card .star {
+.women-perfume a .perfume-card .star {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,13 +423,13 @@ header nav a:hover {
   height: 24px;
   color: #f9cb35;
 }
-.women-perfume .perfume-card .small {
+.women-perfume a .perfume-card .small {
   font-size: 12px;
 }
-.women-perfume .perfume-card .save {
+.women-perfume a .perfume-card .save {
   color: red;
 }
-.women-perfume .perfume-card .rrp {
+.women-perfume a .perfume-card .rrp {
   font-size: 14px;
   color: gray;
 }
@@ -1258,7 +1262,7 @@ body {
 
 .all-brands-sec {
   background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
-  height: 820vh;
+  height: 782vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -1986,12 +1990,15 @@ body {
 }
 .shop-tittle {
   padding-left: 50px;
-  font-size: 32px;
+  font-size: 20px;
   background: white;
+  height: 100px;
+  display: flex;
+  align-items: flex-end;
 }
 .shop-tittle span {
-  font-size: 28px;
-  color: rgb(90, 90, 90);
+  font-size: 32px;
+  color: #5899cb;
 }
 
 .shop-info {
@@ -1999,25 +2006,493 @@ body {
   width: 100vw;
   background: white;
   display: flex;
-  padding: 24px 50px;
+  padding: 24px 64px;
 }
 .shop-info .info-left {
   height: 100%;
   width: 100%;
-  background: #000;
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 .shop-info .info-left .info-left-image {
   height: 100%;
   width: 100%;
-  background: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-info .info-left .info-left-image img {
+  height: 50vh;
+  width: 34vw;
 }
 .shop-info .info-left .info-left-rate {
   height: 80px;
   width: 100%;
+  display: flex;
+  gap: 4px;
+}
+.shop-info .info-left .info-left-rate .i-have-it,
+.shop-info .info-left .info-left-rate .i-had-it,
+.shop-info .info-left .info-left-rate .i-want-it {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas: "it-left it-right" "it-bottom it-bottom";
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 3fr 1fr;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-left,
+.shop-info .info-left .info-left-rate .i-had-it .it-left,
+.shop-info .info-left .info-left-rate .i-want-it .it-left {
+  grid-area: it-left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-left .it-left-round,
+.shop-info .info-left .info-left-rate .i-had-it .it-left .it-left-round,
+.shop-info .info-left .info-left-rate .i-want-it .it-left .it-left-round {
+  height: 50px;
+  width: 50px;
+  border: 4px solid #cacaca;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #cacaca;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-right,
+.shop-info .info-left .info-left-rate .i-had-it .it-right,
+.shop-info .info-left .info-left-rate .i-want-it .it-right {
+  grid-area: it-right;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-bottom,
+.shop-info .info-left .info-left-rate .i-had-it .it-bottom,
+.shop-info .info-left .info-left-rate .i-want-it .it-bottom {
+  grid-area: it-bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-bottom .progress,
+.shop-info .info-left .info-left-rate .i-had-it .it-bottom .progress,
+.shop-info .info-left .info-left-rate .i-want-it .it-bottom .progress {
+  height: 8px;
+  width: 140px;
+  background: #cacaca;
+  border-radius: 20px;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-bottom .progress .progress-percent-have,
+.shop-info .info-left .info-left-rate .i-had-it .it-bottom .progress .progress-percent-have,
+.shop-info .info-left .info-left-rate .i-want-it .it-bottom .progress .progress-percent-have {
+  height: 100%;
+  width: 20%;
+  border-radius: 20px;
+  background: #9fe584;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-bottom .progress .progress-percent-had,
+.shop-info .info-left .info-left-rate .i-had-it .it-bottom .progress .progress-percent-had,
+.shop-info .info-left .info-left-rate .i-want-it .it-bottom .progress .progress-percent-had {
+  height: 100%;
+  width: 5%;
+  border-radius: 20px;
+  background: #eb76bb;
+}
+.shop-info .info-left .info-left-rate .i-have-it .it-bottom .progress .progress-percent-want,
+.shop-info .info-left .info-left-rate .i-had-it .it-bottom .progress .progress-percent-want,
+.shop-info .info-left .info-left-rate .i-want-it .it-bottom .progress .progress-percent-want {
+  height: 100%;
+  width: 70%;
+  border-radius: 20px;
+  background: #447ba3;
 }
 .shop-info .info-right {
   height: 100%;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.shop-info .info-right .info-tittle {
+  height: 24px;
+  width: 100%;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+}
+.shop-info .info-right .info-logo {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+.shop-info .info-right .info-logo img {
+  height: 100%;
+  width: 150px;
+}
+.shop-info .info-right .main-accords {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  width: 40vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-1 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ee363b;
+  color: white;
+  width: 36vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-2 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fffec1;
+  width: 34vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-3 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eff3fb;
+  width: 30vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-4 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f0fbf6;
+  width: 28vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-5 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #5b89bb;
+  color: white;
+  width: 20vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-6 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4e9de;
+  width: 18vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-7 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4e9de;
+  width: 16vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-8 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffe969;
+  width: 13vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-9 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #85c5b7;
+  width: 12vw;
+  border-radius: 0 0 8px 0;
+}
+.shop-info .info-right .info-ingredient-10 {
+  height: 32px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #d99976;
+  color: white;
+  width: 10vw;
+  border-radius: 0 0 8px 0;
+}
+
+.bg-nav {
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.4823529412);
+  margin-top: -10vh;
+  position: sticky;
+  top: 0;
+}
+
+.shop-sell {
+  height: 80vh;
+  width: 100vw;
+  background: white;
+  display: flex;
+  padding: 24px 64px;
+}
+.shop-sell .shop-sell-right {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.shop-sell .shop-sell-right .view-full {
+  padding: 12px 20px;
+  margin-bottom: 24px;
+  font-weight: bold;
+  border: 1px solid black;
+  border-radius: 8px;
+  background: none;
+}
+.shop-sell .shop-sell-right .view-full:hover {
+  background: #1E90FF;
+  border-color: #1E90FF;
+}
+.shop-sell .shop-sell-right .image-change-box {
+  width: 100%;
+}
+.shop-sell .shop-sell-right .image-change-box .image-change-bg {
+  width: 100%;
+  height: 440px;
+  margin: 16px 0;
+  border: 1px solid black;
+  box-shadow: 0 0 5px black;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease-in-out;
+}
+.shop-sell .shop-sell-right .image-change-box input[type=radio] {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+  display: inline-block;
+  border: 1px solid black;
+  outline: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  box-shadow: 0 0 2px black;
+  background-size: cover;
+  background-position: center;
+  transition: all 0.7s ease-in-out;
+}
+.shop-sell .shop-sell-right .image-change-box input[type=radio]:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px black;
+}
+.shop-sell .shop-sell-right .image-change-box #img-01 {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h0a/hcf/10112006029342/prd-front-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-02 {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h02/hdd/10112006455326/prd-side-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-03 {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h92/he7/10112006783006/prd-back-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-04 {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf4/hc6/10112007045150/prd-extra1-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-05 {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h25/hbd/10112007307294/prd-extra2-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-01:checked ~ .image-change-bg {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h0a/hcf/10112006029342/prd-front-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-02:hover ~ .image-change-bg {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h02/hdd/10112006455326/prd-side-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-03:hover ~ .image-change-bg {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h92/he7/10112006783006/prd-back-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-04:hover ~ .image-change-bg {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf4/hc6/10112007045150/prd-extra1-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-right .image-change-box #img-05:hover ~ .image-change-bg {
+  background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h25/hbd/10112007307294/prd-extra2-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
+}
+.shop-sell .shop-sell-left {
+  height: 100%;
+  width: 100%;
+  padding-top: 40px;
+}
+.shop-sell .shop-sell-left .p-tittle {
+  font-size: 32px;
+}
+.shop-sell .shop-sell-left .p-spray {
+  font-size: 20px;
+}
+.shop-sell .shop-sell-left .p-product {
+  color: #a59597;
+}
+.shop-sell .shop-sell-left .new {
+  padding: 8px 32px;
+  font-size: 20px;
+  margin-top: 16px;
+  background: none;
+  margin-bottom: 24px;
+  border: 1px solid black;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.shop-sell .shop-sell-left .new:hover {
+  background: #1E90FF;
+  border-color: #1E90FF;
+}
+.shop-sell .shop-sell-left .p-head {
+  font-weight: bold;
+  font-size: 30px;
+}
+.shop-sell .shop-sell-left .p-head span {
+  font-size: 20px;
+  font-weight: 100;
+}
+.shop-sell .shop-sell-left .size-bottle {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.shop-sell .shop-sell-left .size-bottle .ml {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid #1E90FF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+.shop-sell .shop-sell-left .size-bottle .ml:hover {
+  border: 4px solid #1E90FF;
+}
+.shop-sell .shop-sell-left .size-bottle .ml .p-price-bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+.shop-sell .shop-sell-left .wrap {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.shop-sell .shop-sell-left .wrap button {
+  height: 50px;
+  width: 300px;
+  border-radius: 8px;
+  background: none;
+  border: 1px solid black;
+  font-size: 20px;
+  cursor: pointer;
+}
+.shop-sell .shop-sell-left .wrap button:hover {
+  background: #1E90FF;
+  border-color: #1E90FF;
+}
+.shop-sell .shop-sell-left .wrap .favorite {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+}
+.shop-sell .shop-sell-left .wrap .favorite #myIcon {
+  font-size: 32px;
+  color: black;
+  cursor: pointer;
+}
+.shop-sell .shop-sell-left .wrap .favorite #myIcon.favo {
+  font-weight: 900;
+  color: gold;
+}
+.shop-sell .shop-sell-left .btn-buy {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.shop-sell .shop-sell-left .btn-buy .quantity {
+  display: inline-flex;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+.shop-sell .shop-sell-left .btn-buy .quantity button {
+  background: #f0f0f0;
+  border: none;
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.shop-sell .shop-sell-left .btn-buy .quantity button:hover {
+  background: #ddd;
+}
+.shop-sell .shop-sell-left .btn-buy .quantity .num {
+  width: 50px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.shop-sell .shop-sell-left .btn-buy .quantity .minus, .shop-sell .shop-sell-left .btn-buy .quantity .plus {
+  font-size: 32px;
+}
+.shop-sell .shop-sell-left .btn-buy .add-to-bag {
+  padding: 12px 80px;
+  font-weight: bold;
+  font-size: 18px;
+  background: black;
+  color: white;
+  border: 2px solid #333;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.shop-sell .shop-sell-left .btn-buy .add-to-bag:hover {
+  background: #1E90FF;
+  border-color: #1E90FF;
 }/*# sourceMappingURL=style.css.map */
