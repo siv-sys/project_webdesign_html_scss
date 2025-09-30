@@ -1,5 +1,5 @@
-.shop-info{
-            .info-right {
+.shop-info {
+    .info-right {
         height: 100%;
         width: 100%;
         display: flex;
@@ -46,8 +46,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #ee363b;
-            color: white;
+            background: #83c928;
             width: 36vw;
             border-radius: 0 0 8px 0;
         }
@@ -58,8 +57,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #fffec1;
-            width: 34vw;
+            background: #cc784a;
+            color: white;
+            width: 25vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -69,8 +69,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #eff3fb;
-            width: 30vw;
+            background: #fbff7f;
+            width: 24vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -80,8 +80,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f0fbf6;
-            width: 28vw;
+            background: #76beae;
+            width: 22vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -91,8 +91,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #5b89bb;
-            color: white;
+            background: #f0e6f2;
+
             width: 20vw;
             border-radius: 0 0 8px 0;
         }
@@ -103,8 +103,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f4e9de;
-            width: 18vw;
+            background: #ac8d70;
+            color: white;
+            width: 18.5vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -114,9 +115,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f4e9de;
+            background: #f2e4f5;
 
-            width: 16vw;
+            width: 15vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -126,8 +127,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #ffe969;
-            width: 13vw;
+            background: #b1cebb;
+            width: 14vw;
             border-radius: 0 0 8px 0;
         }
 
@@ -137,22 +138,146 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #85c5b7;
-
-            width: 12vw;
+            background: #e49378;
+            color: white;
+            width: 14vw;
             border-radius: 0 0 8px 0;
         }
+    }
+}
 
-        .info-ingredient-men-10 {
-            height: 32px;
-            font-size: 20px;
+.shop-info {
+    .info-left {
+        .info-left-rate-savage {
+            height: 80px;
+            width: 100%;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            background: #d99976;
-            color: white;
-            width: 10vw;
-            border-radius: 0 0 8px 0;
+            gap: 4px;
+
+            .i-have-it,
+            .i-had-it,
+            .i-want-it {
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-areas:
+                    'it-left it-right'
+                    'it-bottom it-bottom';
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 3fr 1fr;
+
+                .it-left {
+                    grid-area: it-left;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .it-left-round {
+                        height: 50px;
+                        width: 50px;
+                        border: 4px solid #cacaca;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #cacaca;
+                    }
+                }
+
+                .it-right {
+                    grid-area: it-right;
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                }
+
+                .it-bottom {
+                    grid-area: it-bottom;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .progress {
+                        height: 8px;
+                        width: 140px;
+                        background: #cacaca;
+                        border-radius: 20px;
+
+                        .progress-percent-have {
+                            height: 100%;
+                            width: 70%;
+                            border-radius: 20px;
+                            background: #9fe584;
+                        }
+
+                        .progress-percent-had {
+                            height: 100%;
+                            width: 15%;
+                            border-radius: 20px;
+                            background: #eb76bb;
+                        }
+
+                        .progress-percent-want {
+                            height: 100%;
+                            width: 20%;
+                            border-radius: 20px;
+                            background: #447ba3;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.shop-sell {
+    .shop-sell-right {
+        .image-change-box {
+
+            // thumbnails images
+            #img-01 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h81/h8d/8821458862110/zoom-front-1215662_420x420/dior-sauvage-eau-de-parfum-spray-420x420");
+            }
+
+            #img-02 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hd1/hb6/10148589109278/prd-side-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-03 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h40/haf/10148589371422/prd-back-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-04 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h72/ha5/10148589633566/prd-extra1-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-05 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf3/h9d/10148589895710/prd-extra2-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-01:checked~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h81/h8d/8821458862110/zoom-front-1215662_420x420/dior-sauvage-eau-de-parfum-spray-420x420");
+            }
+
+            #img-02:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hd1/hb6/10148589109278/prd-side-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-03:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h40/haf/10148589371422/prd-back-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-04:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h72/ha5/10148589633566/prd-extra1-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
+            #img-05:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf3/h9d/10148589895710/prd-extra2-1215662_420x420/dior-dior-sauvage-edp60-420x420.jpg");
+            }
+
         }
     }
 }
