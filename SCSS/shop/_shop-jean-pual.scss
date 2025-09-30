@@ -228,7 +228,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #f4e9de;
+            background: #f0fffb;
             width: 18vw;
             border-radius: 0 0 8px 0;
         }
@@ -361,43 +361,43 @@
             }
 
             // thumbnails images
-            #img-01 {
+            #img-jean-01 {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h0a/hcf/10112006029342/prd-front-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-02 {
+            #img-jean-02 {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h02/hdd/10112006455326/prd-side-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-03 {
+            #img-jean-03 {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h92/he7/10112006783006/prd-back-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-04 {
+            #img-jean-04 {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf4/hc6/10112007045150/prd-extra1-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-05 {
+            #img-jean-05 {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h25/hbd/10112007307294/prd-extra2-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-01:checked~.image-change-bg {
+            #img-jean-01:checked~.image-change-bg {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h0a/hcf/10112006029342/prd-front-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-02:hover~.image-change-bg {
+            #img-jean-02:hover~.image-change-bg {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h02/hdd/10112006455326/prd-side-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-03:hover~.image-change-bg {
+            #img-jean-03:hover~.image-change-bg {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h92/he7/10112006783006/prd-back-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-04:hover~.image-change-bg {
+            #img-jean-04:hover~.image-change-bg {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hf4/hc6/10112007045150/prd-extra1-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
 
-            #img-05:hover~.image-change-bg {
+            #img-jean-05:hover~.image-change-bg {
                 background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h25/hbd/10112007307294/prd-extra2-1315762_420x420/jean-paul-gaultier-divine-elixir-parfum-parfum-spray-420x420.jpg");
             }
         }
@@ -429,6 +429,7 @@
             border: 1px solid black;
             border-radius: 8px;
             cursor: pointer;
+
             &:hover {
                 background: #1E90FF;
                 border-color: #1E90FF;
@@ -489,6 +490,7 @@
                 border: 1px solid black;
                 font-size: 20px;
                 cursor: pointer;
+
                 &:hover {
                     background: #1E90FF;
                     border-color: #1E90FF;
@@ -546,15 +548,18 @@
                 .num {
                     width: 50px;
                     text-align: center;
-                    font-size: 20px;    
+                    font-size: 20px;
                     font-weight: bold;
                     user-select: none;
                 }
-                .minus, .plus{
+
+                .minus,
+                .plus {
                     font-size: 32px;
                 }
             }
-            .add-to-bag{
+
+            .add-to-bag {
                 padding: 12px 80px;
                 font-weight: bold;
                 font-size: 18px;
@@ -563,9 +568,289 @@
                 border: 2px solid #333;
                 border-radius: 8px;
                 cursor: pointer;
-                &:hover{
+
+                &:hover {
                     background: #1E90FF;
                     border-color: #1E90FF;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .shop-info {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .info-left-image img {
+            height: 40vh;
+            width: 60vw;
+        }
+
+        .info-right {
+            margin-top: 24px;
+
+            .info-logo img {
+                width: 120px;
+            }
+
+            .main-accords,
+            .info-ingredient-1,
+            .info-ingredient-2,
+            .info-ingredient-3,
+            .info-ingredient-4,
+            .info-ingredient-5,
+            .info-ingredient-6,
+            .info-ingredient-7,
+            .info-ingredient-8,
+            .info-ingredient-9,
+            .info-ingredient-10 {
+                width: 80%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .shop-sell {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 300px;
+                }
+
+                input[type="radio"] {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .wrap button {
+                width: 220px;
+            }
+
+            .btn-buy {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .quantity {
+                    margin-bottom: 16px;
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-tittle {
+        font-size: 16px;
+        padding-left: 20px;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .shop-info {
+        padding: 12px 16px;
+        .info-left-image img {
+            height: 30vh;
+            width: 80vw;
+        }
+
+        .info-right {
+            .info-tittle {
+                font-size: 20px;
+            }
+
+            .main-accords,
+            .info-ingredient-1,
+            .info-ingredient-2,
+            .info-ingredient-3,
+            .info-ingredient-4,
+            .info-ingredient-5,
+            .info-ingredient-6,
+            .info-ingredient-7,
+            .info-ingredient-8,
+            .info-ingredient-9,
+            .info-ingredient-10 {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .shop-sell {
+        padding: 12px 16px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 240px;
+                }
+
+                input[type="radio"] {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .p-tittle {
+                font-size: 24px;
+            }
+
+            .wrap {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            .btn-buy {
+                .quantity {
+                    button {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .num {
+                        font-size: 18px;
+                    }
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-website {
+        display: none;
+    }
+
+    .bg-nav {
+        height: 40px;
+    }
+
+    .shop-tittle {
+        margin-top: 26px;
+        font-size: 14px;
+        padding-left: 18px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .shop-info {
+        height: auto;
+        .info-left {
+            .info-left-image {
+                width: 100%;
+                img {
+                    width: 90vw;
+                    height: auto;
+                }
+            }
+            .info-left-rate{
+                .i-had-it, .i-have-it, .i-want-it{
+                    .it-left{
+                        .it-left-round{
+                            height: 40px;
+                            width: 40px;
+                            margin-right: 8px;
+                        }
+                    }
+                    .it-bottom{
+                        width: 80px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+
+        .info-right {
+            width: 100%;
+            height: auto;
+            .info-logo{
+                img {
+                width: 100px;
+            } 
+            }
+            .main-accords{
+                background: #000;
+            }
+            .info-ingredient-1{
+                width: 100%;
+            }
+            .info-ingredient-2{
+                width: 95%;
+            }
+            .info-ingredient-3{
+                width: 85%;
+            }
+            .info-ingredient-4{
+                width: 80%;
+            }
+            .info-ingredient-5{
+                width: 60%;
+            }
+            .info-ingredient-6{
+                width: 55%;
+            }
+            .info-ingredient-7{
+                width: 50%;
+            }
+            .info-ingredient-8{
+                width: 40%;
+            }
+            .info-ingredient-9{
+                width: 35%;
+            }
+            .info-ingredient-10{
+                width: 30%;
+            }
+
+        }
+
+    }
+
+    .shop-sell {
+        height: auto;
+        .shop-sell-left{
+            .new{
+                margin-bottom: 10px;
+            }
+            .wrap{
+                .favorite{
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+            }
+            .btn-buy{
+                margin-bottom: 24px;
+            }
+        }
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 320px;
                 }
             }
         }

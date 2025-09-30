@@ -245,20 +245,21 @@ header {
               &:hover {
                 background-color: #1E90FF;
                 color: white;
-                border-color: #1E90FF;
+                border-color: white;
               }
             }
 
             &:nth-child(2) {
               background: transparent;
               color: white;
+              background: #1E90FF;
               border: 2px solid #1E90FF;
               transform: 0.3s;
 
               &:hover {
-                background-color: #1E90FF;
-                color: white;
-                border-color: #1E90FF;
+                background-color: white;
+                color: black;
+                border: 2px solid #1E90FF;
               }
             }
           }
@@ -455,6 +456,7 @@ header {
   a {
     text-decoration: none;
     color: black;
+
     .perfume-card {
       width: 220px;
       background: white;
@@ -815,15 +817,17 @@ header {
       gap: 40px;
       padding: 20px 0;
 
-      .perfume-card {
-        width: 80%;
-        height: 44 0px;
-
-        .small {
-          text-align: center;
-          padding: 0 8px;
+      a {
+        .perfume-card {
+          width: 240px;
+          height: 44 0px;
+          .small {
+            text-align: center;
+            padding: 0 8px;
+          }
         }
       }
+
     }
 
 

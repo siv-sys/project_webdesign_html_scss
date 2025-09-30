@@ -281,3 +281,276 @@
         }
     }
 }
+
+@media (max-width: 1024px) {
+    .shop-info {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .info-left-image img {
+            height: 40vh;
+            width: 60vw;
+        }
+
+        .info-right {
+            margin-top: 24px;
+
+            .info-logo img {
+                width: 120px;
+            }
+
+            .main-accords,
+            .info-ingredient-men-1,
+            .info-ingredient-men-2,
+            .info-ingredient-men-3,
+            .info-ingredient-men-4,
+            .info-ingredient-men-5,
+            .info-ingredient-men-6,
+            .info-ingredient-men-7,
+            .info-ingredient-men-8,
+            .info-ingredient-men-9,
+            .info-ingredient-men-10 {
+                width: 80%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .shop-sell {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 300px;
+                }
+
+                input[type="radio"] {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .wrap button {
+                width: 220px;
+            }
+
+            .btn-buy {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .quantity {
+                    margin-bottom: 16px;
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-tittle {
+        font-size: 16px;
+        padding-left: 20px;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .shop-info {
+        padding: 12px 16px;
+        .info-left-image img {
+            height: 30vh;
+            width: 80vw;
+        }
+
+        .info-right {
+            .info-tittle {
+                font-size: 20px;
+            }
+
+            .main-accords,
+            .info-ingredient-men-1,
+            .info-ingredient-men-2,
+            .info-ingredient-men-3,
+            .info-ingredient-men-4,
+            .info-ingredient-men-5,
+            .info-ingredient-men-6,
+            .info-ingredient-men-7,
+            .info-ingredient-men-8,
+            .info-ingredient-men-9,
+            .info-ingredient-men-10 {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .shop-sell {
+        padding: 12px 16px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 240px;
+                }
+
+                input[type="radio"] {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .p-tittle {
+                font-size: 24px;
+            }
+
+            .wrap {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            .btn-buy {
+                .quantity {
+                    button {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .num {
+                        font-size: 18px;
+                    }
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-website {
+        display: none;
+    }
+
+    .bg-nav {
+        height: 40px;
+    }
+
+    .shop-tittle {
+        margin-top: 26px;
+        font-size: 14px;
+        padding-left: 18px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .shop-info {
+        height: auto;
+        .info-left {
+            .info-left-image {
+                width: 100%;
+                img {
+                    width: 90vw;
+                    height: auto;
+                }
+            }
+            .info-left-rate-savage{
+                .i-had-it, .i-have-it, .i-want-it{
+                    .it-left{
+                        .it-left-round{
+                            height: 40px;
+                            width: 40px;
+                            margin-right: 8px;
+                        }
+                    }
+                    .it-bottom{
+                        width: 80px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+
+        .info-right {
+            width: 100%;
+            height: auto;
+            .info-logo{
+                img {
+                width: 100px;
+            } 
+            }
+            .info-ingredient-men-1{
+                width: 100%;
+            }
+            .info-ingredient-men-2{
+                width: 95%;
+            }
+            .info-ingredient-men-3{
+                width: 85%;
+            }
+            .info-ingredient-men-4{
+                width: 80%;
+            }
+            .info-ingredient-men-5{
+                width: 60%;
+            }
+            .info-ingredient-men-6{
+                width: 55%;
+            }
+            .info-ingredient-men-7{
+                width: 50%;
+            }
+            .info-ingredient-men-8{
+                width: 40%;
+            }
+            .info-ingredient-men-9{
+                width: 35%;
+            }
+
+        }
+
+    }
+
+    .shop-sell {
+        height: auto;
+        .shop-sell-left{
+            .new{
+                margin-bottom: 10px;
+            }
+            .wrap{
+                .favorite{
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+            }
+            .btn-buy{
+                margin-bottom: 24px;
+            }
+        }
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
