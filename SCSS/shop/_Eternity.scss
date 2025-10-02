@@ -1,0 +1,571 @@
+.shop-info {
+    .info-right {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+
+        .info-tittle {
+            height: 24px;
+            width: 100%;
+            display: flex;
+            font-size: 24px;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .info-logo {
+            height: 120px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 8px 0;
+
+            img {
+                height: 100%;
+                width: 150px;
+            }
+        }
+
+        .main-accords {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: white;
+            width: 40vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-1 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ff5f8d;
+            width: 36vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-2 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #a6e8ef;
+            width: 33vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-3 {
+            height: 30px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fd7156;
+            width: 24vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-4 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f4f7fd;
+            width: 22vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-5 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #a0e0ed;
+
+            width: 21vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-6 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fad06e;
+            width: 20vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-7 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #af9175;
+            color: white;
+            width: 19vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-8 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #fe6ca9;
+            color: white;
+            width: 18vw;
+            border-radius: 0 0 8px 0;
+        }
+
+        .info-ingredient-eter-9 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f58d90;
+            color: white;
+            width: 17vw;
+            border-radius: 0 0 8px 0;
+        }
+        .info-ingredient-eter-10 {
+            height: 32px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f1e9f3;
+            width: 17vw;
+            border-radius: 0 0 8px 0;
+        }
+    }
+}
+
+.shop-info {
+    .info-left {
+        .info-left-rate-eter {
+            height: 80px;
+            width: 100%;
+            display: flex;
+            gap: 4px;
+
+            .i-have-it,
+            .i-had-it,
+            .i-want-it {
+                height: 100%;
+                width: 100%;
+                display: grid;
+                grid-template-areas:
+                    'it-left it-right'
+                    'it-bottom it-bottom';
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 3fr 1fr;
+
+                .it-left {
+                    grid-area: it-left;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .it-left-round {
+                        height: 50px;
+                        width: 50px;
+                        border: 4px solid #cacaca;
+                        border-radius: 50%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 24px;
+                        font-weight: bold;
+                        color: #cacaca;
+                    }
+                }
+
+                .it-right {
+                    grid-area: it-right;
+                    display: flex;
+                    align-items: center;
+                    font-size: 18px;
+                }
+
+                .it-bottom {
+                    grid-area: it-bottom;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .progress {
+                        height: 8px;
+                        width: 140px;
+                        background: #cacaca;
+                        border-radius: 20px;
+
+                        .progress-percent-have {
+                            height: 100%;
+                            width: 70%;
+                            border-radius: 20px;
+                            background: #9fe584;
+                        }
+
+                        .progress-percent-had {
+                            height: 100%;
+                            width: 25%;
+                            border-radius: 20px;
+                            background: #eb76bb;
+                        }
+
+                        .progress-percent-want {
+                            height: 100%;
+                            width: 20%;
+                            border-radius: 20px;
+                            background: #447ba3;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.shop-sell {
+    .shop-sell-right {
+        .image-change-box {
+
+            // thumbnails images
+            #img-eter-01 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h68/h2d/8820465598494/zoom-front-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-02 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hc4/h9f/8873003483166/zoom-side-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-03 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hfe/h3c/8873004269598/zoom-back-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-04 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h5d/h59/9166334099486/prd-extra1-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420.jpg");
+            }
+
+            #img-eter-05 {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h7c/h4f/9166334361630/prd-extra2-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420.jpg");
+            }
+
+            #img-eter-01:checked~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h68/h2d/8820465598494/zoom-front-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-02:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hc4/h9f/8873003483166/zoom-side-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-03:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/hfe/h3c/8873004269598/zoom-back-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420");
+            }
+
+            #img-eter-04:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h5d/h59/9166334099486/prd-extra1-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420.jpg");
+            }
+
+            #img-eter-05:hover~.image-change-bg {
+                background-image: url("https://media.theperfumeshop.com/medias/sys_master/prd-images/h7c/h4f/9166334361630/prd-extra2-1033190_420x420/calvin-klein-eternity-moment-eau-de-parfum-spray-420x420.jpg");
+            }
+
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .shop-info {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .info-left-image img {
+            height: 40vh;
+            width: 60vw;
+        }
+
+        .info-right {
+            margin-top: 24px;
+
+            .info-logo img {
+                width: 120px;
+            }
+
+            .main-accords,
+            .info-ingredient-eter-1,
+            .info-ingredient-eter-2,
+            .info-ingredient-eter-3,
+            .info-ingredient-eter-4,
+            .info-ingredient-eter-5,
+            .info-ingredient-eter-6,
+            .info-ingredient-eter-7,
+            .info-ingredient-eter-8,
+            .info-ingredient-eter-9,
+            .info-ingredient-eter-10 {
+                width: 80%;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .shop-sell {
+        flex-direction: column;
+        padding: 16px 32px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 300px;
+                }
+
+                input[type="radio"] {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .wrap button {
+                width: 220px;
+            }
+
+            .btn-buy {
+                flex-direction: column;
+                align-items: flex-start;
+
+                .quantity {
+                    margin-bottom: 16px;
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .shop-tittle {
+        font-size: 16px;
+        padding-left: 20px;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .shop-info {
+        padding: 12px 16px;
+        .info-left-image img {
+            height: 30vh;
+            width: 80vw;
+        }
+
+        .info-right {
+            .info-tittle {
+                font-size: 20px;
+            }
+
+            .main-accords,
+            .info-ingredient-eter-1,
+            .info-ingredient-eter-2,
+            .info-ingredient-eter-3,
+            .info-ingredient-eter-4,
+            .info-ingredient-eter-5,
+            .info-ingredient-eter-6,
+            .info-ingredient-eter-7,
+            .info-ingredient-eter-8,
+            .info-ingredient-eter-9,
+            .info-ingredient-eter-10 {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .shop-sell {
+        padding: 12px 16px;
+
+        .shop-sell-right {
+            .image-change-box {
+                .image-change-bg {
+                    height: 240px;
+                }
+
+                input[type="radio"] {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+
+        .shop-sell-left {
+            .p-tittle {
+                font-size: 24px;
+            }
+
+            .wrap {
+                flex-direction: column;
+
+                button {
+                    width: 100%;
+                }
+            }
+
+            .btn-buy {
+                .quantity {
+                    button {
+                        width: 36px;
+                        height: 36px;
+                    }
+
+                    .num {
+                        font-size: 18px;
+                    }
+                }
+
+                .add-to-bag {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-website {
+        display: none;
+    }
+
+    .bg-nav {
+        height: 40px;
+    }
+
+    .shop-tittle {
+        margin-top: 26px;
+        font-size: 14px;
+        padding-left: 18px;
+
+        span {
+            font-size: 20px;
+        }
+    }
+
+    .shop-info {
+        height: auto;
+        .info-left {
+            .info-left-image {
+                width: 100%;
+                img {
+                    width: 90vw;
+                    height: auto;
+                }
+            }
+            .info-left-rate-eter{
+                .i-had-it, .i-have-it, .i-want-it{
+                    .it-left{
+                        .it-left-round{
+                            height: 40px;
+                            width: 40px;
+                            margin-right: 8px;
+                        }
+                    }
+                    .it-bottom{
+                        width: 80px;
+                        margin-left: 16px;
+                    }
+                }
+            }
+        }
+
+        .info-right {
+            width: 100%;
+            height: auto;
+            .info-logo{
+                img {
+                width: 100px;
+            } 
+            }
+            .info-ingredient-eter-1{
+                width: 100%;
+            }
+            .info-ingredient-eter-2{
+                width: 95%;
+            }
+            .info-ingredient-eter-3{
+                width: 85%;
+            }
+            .info-ingredient-eter-4{
+                width: 80%;
+            }
+            .info-ingredient-eter-5{
+                width: 60%;
+            }
+            .info-ingredient-eter-6{
+                width: 55%;
+            }
+            .info-ingredient-eter-7{
+                width: 50%;
+            }
+            .info-ingredient-eter-8{
+                width: 40%;
+            }
+            .info-ingredient-eter-9{
+                width: 35%;
+            }
+            .info-ingredient-eter-10{
+                width: 30%;
+            }
+
+        }
+
+    }
+
+    .shop-sell {
+        height: auto;
+        .shop-sell-left{
+            .new{
+                margin-bottom: 10px;
+            }
+            .wrap{
+                .favorite{
+                    text-decoration: none;
+                    border-bottom: none;
+                }
+            }
+            .btn-buy{
+                margin-bottom: 24px;
+            }
+        }
+        .shop-sell-right {
+            .view-full{
+                color: black;
+            }
+            .image-change-box {
+                .image-change-bg {
+                    height: 320px;
+                }
+            }
+        }
+    }
+}
