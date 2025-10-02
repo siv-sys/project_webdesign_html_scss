@@ -11,6 +11,7 @@
   display: flex;
   align-items: center;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.268) 50%, rgba(0, 0, 0, 0.268) 50%);
+  
   z-index: 1100;
 
   input {
@@ -232,14 +233,18 @@ header {
           opacity: 0;
           animation: animate 1s ease-in-out 1.2s 1 forwards;
 
-          button {
-            padding: 8px 16px;
-            border: none;
-            cursor: pointer;
-            font-size: 12px;
-            border: 2px solid white;
+          a {
+            height: auto;
 
-            &:nth-child(1) {
+            button {
+              padding: 8px 16px;
+              border: none;
+              cursor: pointer;
+              font-size: 12px;
+              border: 2px solid white;
+            }
+
+            &:nth-of-type(1) button {
               margin-right: 15px;
 
               &:hover {
@@ -249,12 +254,11 @@ header {
               }
             }
 
-            &:nth-child(2) {
-              background: transparent;
-              color: white;
+            &:nth-of-type(2) button {
               background: #1E90FF;
+              color: white;
               border: 2px solid #1E90FF;
-              transform: 0.3s;
+              transition: 0.3s;
 
               &:hover {
                 background-color: white;
@@ -769,17 +773,20 @@ header {
       background: linear-gradient(to bottom, #FFFFFF, #FFF5E1);
 
       .tittle-one {
-
         width: 100%;
-
-
+        height: auto;
+        
         a {
-          font-size: 10px;
+          font-size: 14px;
+          margin-bottom: 18px;
         }
 
         h2 {
-          font-size: 14px;
+          font-size: 20px;
+          text-align: center;
           color: #4a4a6a;
+          margin-bottom: 8px;
+          margin-top: 8px;
         }
       }
 
@@ -796,16 +803,17 @@ header {
         a {
           border: none;
           text-decoration: underline;
+          font-size: 14px;
         }
       }
 
       .tittle-three a {
-        font-size: 10px;
+        font-size: 14px;
       }
 
       .tittle-three h2 {
-        font-size: 18px;
-        color: #4a4a6a;
+        font-size: 20px;
+        color: #4B4B9B;
 
       }
     }
@@ -821,6 +829,7 @@ header {
         .perfume-card {
           width: 240px;
           height: 44 0px;
+
           .small {
             text-align: center;
             padding: 0 8px;

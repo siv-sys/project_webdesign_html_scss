@@ -35,7 +35,7 @@ body {
   align-items: center;
 
   h1 {
-    color: #4a4a6a;
+    color: #4B4B9B;
   }
 }
 
@@ -174,6 +174,7 @@ body {
 }
 
 .perfume-card {
+  
   width: 200px;
   background: white;
   height: 320px;
@@ -194,12 +195,15 @@ body {
   }
 
   h4 {
+    text-decoration: none;
+    color: black;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
   }
 
   p {
+    color: black;
     text-align: center;
     padding: 0 8px;
   }
@@ -381,7 +385,6 @@ body {
 
 @media (max-width: 428px) {
 
-  /* Poster */
   .poster {
     height: 40vh;
     margin-top: 0;
@@ -389,7 +392,6 @@ body {
     margin-top: -6vh;
   }
 
-  /* Header Section */
   .all-brands-sec {
     height: auto;
 
@@ -409,13 +411,13 @@ body {
           text-align: center;
           border: none;
           text-decoration: underline;
+          font-size: 14px;
+          &:hover{
+            color: #1e90ff;
+          }
         }
       }
     }
-
-
-
-    /* Logo Section */
     .logo {
       flex-direction: column;
       align-items: center;
@@ -478,18 +480,10 @@ body {
     }
   }
 
-  /* Perfume Cards - Horizontal Scroll */
-
-
-
-
-
-
   .image-card {
     height: 160px;
   }
 
-  /* Brand Section Wrapper */
   .brand-section {
     padding: 16px;
     margin-bottom: 32px;
