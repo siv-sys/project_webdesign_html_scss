@@ -3166,6 +3166,9 @@ body {
   .shop-sell .shop-sell-left .btn-buy {
     margin-bottom: 24px;
   }
+  .shop-sell .shop-sell-right .view-full {
+    color: black;
+  }
   .shop-sell .shop-sell-right .image-change-box .image-change-bg {
     height: 320px;
   }
