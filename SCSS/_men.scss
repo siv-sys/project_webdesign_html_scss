@@ -9,7 +9,7 @@ body {
 
 body.fade-out {
   opacity: 0;
-    transform: translateY(20px);
+  transform: translateY(20px);
 }
 
 .value {
@@ -34,17 +34,19 @@ body.fade-out {
     text-align: center;
     width: 80%;
     color: white;
-     h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 4rem;
-    margin: 0;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-  }
-  p {
-    font-size: 1.5rem;
-    margin-top: 10px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
-  }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 4rem;
+      margin: 0;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    }
+
+    p {
+      font-size: 1.5rem;
+      margin-top: 10px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    }
   }
 
 
@@ -189,7 +191,7 @@ body.fade-out {
           // border: 1px solid black;
           border-radius: 16px;
           color: white;
-          
+
           background: #302aaf;
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           transition: 0.3s ease-in-out;
@@ -247,43 +249,128 @@ body.fade-out {
   }
 }
 
-/* Footer */
+// Responsive
+@media (max-width: 1024px) and (min-width: 768px) {
 
-@media screen and (max-width: 1024px) {
+
+  .image {
+    height: 70vh;
+    width: 100%;
+
+    img {
+      height: 80vh;
+      width: 100%;
+      margin-top: -17vh;
+    }
+
+    .on-text {
+      top: 8%;
+      width: 90%;
+      display: block;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      p {
+        font-size: 1.2rem;
+      }
+    }
+  }
+
   .info {
-    flex-direction: row;
+    height: auto;
+    padding: 20px;
+    width: 100%;
     flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    height: 16vh;
 
     .free-shipping,
     .premium,
     .trust {
       width: 28vw;
-      margin-bottom: 10px;
+      padding: 12px;
+
+      i {
+        font-size: 32px;
+      }
     }
   }
 
-  .men-sec .men-perfume .perfume-card {
-    width: 200px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .info {
-    flex-direction: column;
+  /* Men perfume grid */
+  .men-sec {
     height: auto;
+    width: 100%;
+    padding: 20px;
 
-    .free-shipping,
-    .premium,
-    .trust {
-      width: 80%;
-      margin: 10px auto;
+    .men-perfume {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      height: auto;
+      justify-content: flex-start;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      .perfume-card {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 38vh;
+        padding: 12px;
+        scroll-snap-align: start;
+
+        h4 {
+          font-size: 14px;
+        }
+
+        .image-card {
+          height: 180px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .btn {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          gap: 8px;
+          .btn-a {
+            font-size: 12px;
+            padding: 8px 18px;
+          }
+        }
+
+        .small,
+        .rrp {
+          font-size: 12px;
+        }
+      }
+    }
+
+    .men-brand h1 {
+      font-size: 28px;
     }
   }
+  .value {
+    font-size: 28px;
+    padding-bottom: 20px;
+  }
 
-  .men-sec .men-perfume {
-    gap: 16px;
+  .men-tittle {
+    margin-top: 40px;
+    margin-bottom: 20px;
   }
 }
+
 
 @media screen and (max-width: 428px) {
   .logo-website {

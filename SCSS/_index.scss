@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
   background-image: linear-gradient(to top, rgba(0, 0, 0, 0.268) 50%, rgba(0, 0, 0, 0.268) 50%);
-  
+
   z-index: 1100;
 
   input {
@@ -601,55 +601,198 @@ header {
 
 }
 
-@media screen and (max-width: 690px) {
-  header a {
-    font-size: 14px;
-    margin-right: 0;
-  }
-
-  .item .content {
-    top: 40%;
-  }
-
-  .content {
-
-    .tittle,
-    .name {
-      font-size: 45px;
-    }
-
-    .btn button {
-      padding: 6px 10px;
-      font-size: 10px;
-    }
-  }
-}
-
-
 /* Responsive */
-@media screen and (max-width: 999px) {
-  header {
-    padding-left: 50px;
-  }
+@media (max-width: 1024px) and (min-width: 768px) {
 
-  .item .content {
-    left: 50px;
-  }
+  .logo-website {
+    height: 10vh;
 
-  .content {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-bottom: 16px;
 
-    .tittle,
-    .name {
-      font-size: 70px;
-    }
-
-    .des {
+    input {
+      width: 300px;
+      margin-left: -24vw;
       font-size: 16px;
     }
+
+    i {
+      margin-left: -40px;
+      font-size: 20px;
+    }
+
+    .head-left {
+      gap: 12px;
+      padding-left: 20px;
+
+      h3 {
+        font-size: 24px;
+      }
+
+      .logo-perfume {
+        height: 80px;
+        width: 80px;
+      }
+    }
+
+    .head-right {
+      button {
+        width: 80px;
+        height: 30px;
+        font-size: 14px;
+      }
+
+      .sign-up {
+        padding: 24px 0;
+        width: 140px;
+        border-radius: 40px;
+        margin-right: 16px;
+        font-size: 20px;
+      }
+
+      .log-in {
+        padding: 24px 0;
+        width: 140px;
+        border-radius: 40px;
+        margin-right: 2px;
+        font-size: 20px;
+      }
+    }
+  }
+
+  header {
+    padding-left: 20px;
+    height: auto;
+
+    nav {
+      margin-left: 28px;
+      gap: 16px;
+
+      a {
+        font-size: 20px;
+        padding: 4px 8px;
+      }
+    }
+  }
+
+  /* Carousel */
+  .carousel {
+    height: 70vh;
+    margin-top: -18vh;
+
+    .list .item {
+      width: 140px;
+      height: 200px;
+    }
+
+    .list .item:nth-child(2) .content {
+      width: 70%;
+      left: 30px;
+
+      .tittle {
+        font-size: 40px;
+        margin-left: 28px;
+      }
+
+      .name {
+        font-size: 36px;
+        margin-left: 28px;
+      }
+
+      .des {
+        font-size: 14px;
+        margin-left: 28px;
+      }
+
+      .btn {
+        margin-left: 28px;
+      }
+    }
+  }
+
+  /* Titles */
+  .home-des {
+    height: auto;
+
+    .tittle-one,
+    .tittle-two,
+    .tittle-three {
+      padding: 20px;
+      height: auto;
+      display: flex;
+      flex-wrap: wrap;
+
+      h2 {
+        font-size: 20px;
+        text-align: center;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  /* Women Perfume Section */
+  .women-perfume {
+    flex-wrap: wrap;
+    gap: 16px;
+    height: auto;
+    padding: 20px;
+
+    a .perfume-card {
+      width: 240px;
+      height: auto;
+
+      h4 {
+        font-size: 14px;
+      }
+
+      .small,
+      .rrp {
+        font-size: 12px;
+      }
+    }
+  }
+
+  /* Footer */
+  .home-foot {
+    flex-wrap: wrap;
+    height: auto;
+    gap: 20px;
+
+    .footer-one,
+    .footer-two,
+    .footer-three,
+    .footer-four {
+      width: 45%;
+
+      /* 2 columns on tablet */
+      h2 {
+        font-size: 22px;
+      }
+
+      a {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .under-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+    padding: 20px;
+    height: auto;
+
+    .copyright {
+      font-size: 14px;
+    }
   }
 }
 
-/* iPhone Responsive (429px and below) */
 @media screen and (max-width: 428px) {
   body {
     width: 100%;
@@ -775,7 +918,7 @@ header {
       .tittle-one {
         width: 100%;
         height: auto;
-        
+
         a {
           font-size: 14px;
           margin-bottom: 18px;

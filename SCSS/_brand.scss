@@ -174,7 +174,7 @@ body {
 }
 
 .perfume-card {
-  
+
   width: 200px;
   background: white;
   height: 320px;
@@ -232,60 +232,117 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ________FOOTER _____________*/
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
   .poster {
-    height: 60vh;
+    width: 100%;
   }
 
-  .head-brands {
-    height: 15vh;
-    padding: 8px;
+  .all-brands-sec {
+    height: auto;
+    width: 100%;
+
+
+    .head-brands {
+      height: 14vh;
+      width: 100%;
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .tittle-brand {
+        gap: 12px;
+        font-size: 14px;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 16px;
+
+        a {
+          padding-left: 6px;
+        }
+      }
+    }
+
+
+
+    .dolce,
+    .calvin,
+    .bvlgari,
+    .christiandior,
+    .YVESSAINTLAURENT,
+    .BURBERRY,
+    .GUERLAIN,
+    .GIORGIO-ARMANI,
+    .VERSACE,
+    .GIVENCHY {
+      height: auto;
+      margin: 24px;
+      padding: 16px;
+
+      .logo { 
+        height: 12vh;
+        flex-direction: row;
+        align-items: center;
+
+        &-left {
+          height: auto;
+          width: 20vw;
+          justify-content: center;
+
+          .image-logo {
+            height: 80px;
+            width: 80px;
+          }
+        }
+
+        &-right {
+          height: auto;
+          padding-left: 12px;
+        }
+      }
+    }
+
+
+
+
+
+    .card-brand {
+      height: 28vh;
+
+      .scroll-card {
+        margin: 0 12px;
+        padding: 0 8px;
+        gap: 16px;
+
+        .scroll-item {
+          width: 160px;
+          margin-right: 16px;
+
+          .perfume-card {
+            width: 160px;
+            height: 280px;
+
+            h4 {
+              font-size: 14px;
+            }
+
+            p {
+              font-size: 12px;
+            }
+
+            .image-card {
+              height: 180px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-@media (max-width: 768px) {
-  .poster {
-    height: 50vh;
-  }
 
-  .head-brands {
-    height: auto;
-    padding: 16px;
-  }
-
-  .tittle-brand {
-    flex-wrap: wrap;
-    gap: 8px;
-    font-size: 14px;
-  }
-
-  .dolce,
-  .calvin,
-  .bvlgari,
-  .christiandior,
-  .YVESSAINTLAURENT,
-  .BURBERRY,
-  .GUERLAIN,
-  .GIORGIO-ARMANI,
-  .VERSACE,
-  .GIVENCHY {
-    height: auto;
-    margin: 16px;
-  }
-
-  .scroll-item {
-    width: 160px;
-  }
-
-  .perfume-card {
-    width: 160px;
-  }
-
-  .image-card {
-    height: 200px;
-  }
-}
 
 @media (max-width: 480px) {
 
@@ -412,12 +469,14 @@ body {
           border: none;
           text-decoration: underline;
           font-size: 14px;
-          &:hover{
+
+          &:hover {
             color: #1e90ff;
           }
         }
       }
     }
+
     .logo {
       flex-direction: column;
       align-items: center;

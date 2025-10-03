@@ -29,7 +29,7 @@
             }
         }
 
-        .main-accords {
+        .main-accords-light-blue {
             height: 32px;
             font-size: 20px;
             display: flex;
@@ -236,48 +236,186 @@
     }
 }
 
-@media (max-width: 1024px) {
-    .shop-info {
-        flex-direction: column;
-        padding: 16px 32px;
+@media (min-width: 768px) and (max-width: 1024px) {
+    header {
+        height: 54px;
+        margin-top: -16px;
+    }
 
-        .info-left-image img {
-            height: 40vh;
-            width: 60vw;
+    .bg-nav {
+        height: 54px;
+        margin-top: -54px;
+    }
+
+    .shop-tittle {
+        padding-left: 20px;
+        font-size: 18px;
+        height: 80px;
+
+        span {
+            font-size: 24px;
+        }
+    }
+
+    .shop-info {
+
+        flex-direction: column;
+        padding: 16px 40px;
+        height: auto;
+
+        .info-left {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            height: 32vh;
+
+            .info-left-image {
+                width: 1200px;
+
+                img {
+                    height: 100%;
+                    width: 70%;
+                    max-height: 320px;
+                }
+            }
+
+            .info-left-rate-light-blue {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                height: auto;
+
+                .i-have-it,
+                .i-had-it,
+                .i-want-it {
+                    height: 80px;
+                }
+            }
         }
 
         .info-right {
-            margin-top: 24px;
+            width: 100%;
+            margin-top: 20px;
+
+            .info-tittle {
+                font-size: 20px;
+            }
 
             .info-logo img {
                 width: 120px;
+                height: auto;
             }
 
-            .main-accords,
-            .info-ingredient-light-blue-1,
-            .info-ingredient-light-blue-2,
-            .info-ingredient-light-blue-3,
-            .info-ingredient-light-blue-4,
-            .info-ingredient-light-blue-5,
-            .info-ingredient-light-blue-6,
-            .info-ingredient-light-blue-7,
-            .info-ingredient-light-blue-8,
-            .info-ingredient-light-blue-9,
-            .info-ingredient-light-blue-10 {
+            .main-accords-light-blue {
                 width: 80%;
-                font-size: 18px;
+                font-size: 16px;
+
             }
+
+            .info-ingredient-light-blue-1 {
+                width: 80%;
+            }
+
+            .info-ingredient-light-blue-2 {
+                width: 75%;
+            }
+
+            .info-ingredient-light-blue-3 {
+                width: 68%;
+            }
+
+            .info-ingredient-light-blue-4 {
+                width: 64%;
+            }
+
+            .info-ingredient-light-blue-5 {
+                width: 50%;
+            }
+
+            .info-ingredient-light-blue-6 {
+                width: 45%;
+            }
+
+            .info-ingredient-light-blue-7 {
+                width: 40%;
+            }
+
+            .info-ingredient-light-blue-8 {
+                width: 36%;
+            }
+
+            .info-ingredient-light-blue-9 {
+                width: 32%;
+            }
+
+            .info-ingredient-light-blue-10 {
+                width: 30%;
+            }
+
         }
     }
 
     .shop-sell {
         flex-direction: column;
-        padding: 16px 32px;
+        padding: 16px 40px;
+        height: auto;
+
+        .shop-sell-left {
+            .p-tittle {
+                font-size: 24px;
+            }
+
+            .p-head {
+                font-size: 22px;
+
+                span {
+                    font-size: 16px;
+                }
+            }
+
+            .size-bottle {
+                flex-wrap: wrap;
+                justify-content: center;
+
+                .ml {
+                    width: 80px;
+                    height: 80px;
+                    font-size: 14px;
+
+                    .p-price-bold {
+                        font-size: 16px;
+                    }
+                }
+            }
+
+            .wrap {
+                flex-direction: column;
+                gap: 12px;
+
+                button {
+                    width: 100%;
+                    font-size: 16px;
+                }
+            }
+
+            .btn-buy {
+                flex-direction: column;
+                align-items: center;
+                gap: 12px;
+                margin-bottom: 16px;
+                .add-to-bag {
+                    width: 100%;
+                    font-size: 16px;
+                    padding: 12px;
+                }
+            }
+        }
 
         .shop-sell-right {
             .image-change-box {
                 .image-change-bg {
-                    height: 300px;
+                    height: 540px;
                 }
 
                 input[type="radio"] {
@@ -286,116 +424,9 @@
                 }
             }
         }
-
-        .shop-sell-left {
-            .wrap button {
-                width: 220px;
-            }
-
-            .btn-buy {
-                flex-direction: column;
-                align-items: flex-start;
-
-                .quantity {
-                    margin-bottom: 16px;
-                }
-
-                .add-to-bag {
-                    width: 100%;
-                    text-align: center;
-                }
-            }
-        }
     }
 }
 
-@media (max-width: 768px) {
-    .shop-tittle {
-        font-size: 16px;
-        padding-left: 20px;
-
-        span {
-            font-size: 24px;
-        }
-    }
-
-    .shop-info {
-        padding: 12px 16px;
-        .info-left-image img {
-            height: 30vh;
-            width: 80vw;
-        }
-
-        .info-right {
-            .info-tittle {
-                font-size: 20px;
-            }
-
-            .main-accords,
-            .info-ingredient-light-blue-1,
-            .info-ingredient-light-blue-2,
-            .info-ingredient-light-blue-3,
-            .info-ingredient-light-blue-4,
-            .info-ingredient-light-blue-5,
-            .info-ingredient-light-blue-6,
-            .info-ingredient-light-blue-7,
-            .info-ingredient-light-blue-8,
-            .info-ingredient-light-blue-9,
-            .info-ingredient-light-blue-10 {
-                width: 100%;
-                font-size: 16px;
-            }
-        }
-    }
-
-    .shop-sell {
-        padding: 12px 16px;
-
-        .shop-sell-right {
-            .image-change-box {
-                .image-change-bg {
-                    height: 240px;
-                }
-
-                input[type="radio"] {
-                    width: 40px;
-                    height: 40px;
-                }
-            }
-        }
-
-        .shop-sell-left {
-            .p-tittle {
-                font-size: 24px;
-            }
-
-            .wrap {
-                flex-direction: column;
-
-                button {
-                    width: 100%;
-                }
-            }
-
-            .btn-buy {
-                .quantity {
-                    button {
-                        width: 36px;
-                        height: 36px;
-                    }
-
-                    .num {
-                        font-size: 18px;
-                    }
-                }
-
-                .add-to-bag {
-                    width: 100%;
-                }
-            }
-        }
-    }
-}
 
 @media (max-width: 480px) {
     .logo-website {

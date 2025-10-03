@@ -1,4 +1,3 @@
-
 body {
   display: flex;
   flex-direction: column;
@@ -64,9 +63,11 @@ body {
         height: 24px;
         color: #f9cb35;
       }
-      .name{
+
+      .name {
         font-size: 16px;
       }
+
       .btn {
         height: 40px;
         width: 100%;
@@ -83,15 +84,15 @@ body {
           font-size: 10px;
           text-decoration: none;
           border-radius: 16px;
-          
+
           color: white;
           background: #302aaf;
-          
+
           box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
           transition: 0.3s ease-in-out;
 
           &:hover {
-            color: black; 
+            color: black;
             transform: scale(1.05, 1.05);
             border: 2px solid #302aaf;
             background: rgba(128, 128, 128, 0.162);
@@ -136,42 +137,83 @@ body {
   }
 }
 
+@media (max-width: 1024px) and (min-width: 768px) {
+  .women-sec {
+    height: auto;
+    .women-perfume {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      justify-content: flex-start;
+      gap: 16px;
+      height: auto;
 
-/* Footer */
+      .perfume-card {
+        flex: 0 0 auto;
+        width: 200px;
+        height: 38vh;
+        padding: 12px;
+        scroll-snap-align: start;
 
-@media screen and (max-width: 1024px) {
-  .info {
-    flex-direction: row;
-    flex-wrap: wrap;
+        h4 {
+          font-size: 14px;
+        }
 
-    .free-shipping,
-    .premium,
-    .trust {
-      width: 28vw;
-      margin-bottom: 10px;
+        .image-card {
+          height: 180px;
+        }
+
+        .name {
+          font-size: 14px;
+        }
+
+        .btn {
+          display: flex;
+          flex-direction: column;
+          height: auto;
+          gap: 8px;
+
+          .btn-a {
+            font-size: 12px;
+            padding: 8px 18px;
+
+          }
+        }
+
+        .small,
+        .rrp {
+          font-size: 12px;
+        }
+      }
+
+      &::-webkit-scrollbar {
+        height: 6px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background: #bbb;
+        border-radius: 4px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: transparent;
+      }
     }
-  }
-
-  .men-sec .men-perfume .perfume-card {
-    width: 200px;
   }
 }
 
-@media screen and (max-width: 768px) {
-  .info {
-    flex-direction: column;
-    height: auto;
+@media (max-width: 767px) {
+  .women-perfume {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 12px;
+    padding: 10px;
 
-    .free-shipping,
-    .premium,
-    .trust {
-      width: 80%;
-      margin: 10px auto;
+    .perfume-card {
+      flex: 0 0 auto;
+      width: 140px;
     }
-  }
-
-  .men-sec .men-perfume {
-    gap: 16px;
   }
 }
 
@@ -198,13 +240,15 @@ body {
     }
 
   }
-  .info{
+
+  .info {
     background: white;
-      .free-shipping,
-  .premium,
-  .trust {
-    height: 12vh;
-  }
+
+    .free-shipping,
+    .premium,
+    .trust {
+      height: 12vh;
+    }
   }
 
   .women-sec {
@@ -220,20 +264,23 @@ body {
       justify-content: space-around;
       gap: 0;
       margin-top: 10px;
-      
+
       .perfume-card {
         max-width: 170px;
         height: 380px;
         margin-bottom: 20px;
-        .btn{
-        display: flex;
-        margin-top: 8px;
-        gap: 4px;
-        .btn-a{
-          padding: 4px 8px;
 
+        .btn {
+          display: flex;
+          margin-top: 8px;
+          gap: 4px;
+
+          .btn-a {
+            padding: 4px 8px;
+
+          }
         }
-      }
+
         &:nth-child(5) {
           display: none;
         }
