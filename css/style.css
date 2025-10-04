@@ -1517,8 +1517,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.head-brands {
+.all-brands-sec .head-brands {
   height: 20vh;
   width: 100vw;
   background: rgb(183, 121, 121);
@@ -1528,20 +1527,19 @@ body {
   justify-content: center;
   align-items: center;
 }
-.head-brands h1 {
+.all-brands-sec .head-brands h1 {
   color: #4B4B9B;
 }
-
-.tittle-brand {
+.all-brands-sec .head-brands .tittle-brand {
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 8px;
   overflow: hidden;
   white-space: nowrap;
 }
-.tittle-brand a {
+.all-brands-sec .head-brands .tittle-brand a {
   text-decoration: none;
   color: black;
   border-left: 1px solid black;
@@ -1549,49 +1547,104 @@ body {
   position: relative;
   transition: color 0.3s ease-in-out;
 }
-.tittle-brand a:hover {
+.all-brands-sec .head-brands .tittle-brand a:hover {
   background: none;
+  color: #302aaf;
 }
-.tittle-brand a:nth-child(1), .tittle-brand a:nth-child(2), .tittle-brand a:nth-child(3) {
+.all-brands-sec .head-brands .tittle-brand a:nth-child(1), .all-brands-sec .head-brands .tittle-brand a:nth-child(2), .all-brands-sec .head-brands .tittle-brand a:nth-child(3) {
   font-family: Helvetica, Arial, sans-serif;
 }
-.tittle-brand a:nth-child(4), .tittle-brand a:nth-child(5) {
+.all-brands-sec .head-brands .tittle-brand a:nth-child(4), .all-brands-sec .head-brands .tittle-brand a:nth-child(5) {
   font-family: serif;
 }
-.tittle-brand a:nth-child(6), .tittle-brand a:nth-child(7) {
+.all-brands-sec .head-brands .tittle-brand a:nth-child(6), .all-brands-sec .head-brands .tittle-brand a:nth-child(7) {
   font-family: sans-serif;
 }
-
-.dolce,
-.calvin,
-.bvlgari,
-.christiandior,
-.YVESSAINTLAURENT,
-.BURBERRY,
-.GUERLAIN,
-.GIORGIO-ARMANI,
-.VERSACE,
-.GIVENCHY {
+.all-brands-sec .dolce,
+.all-brands-sec .calvin,
+.all-brands-sec .bvlgari,
+.all-brands-sec .christiandior,
+.all-brands-sec .YVESSAINTLAURENT,
+.all-brands-sec .BURBERRY,
+.all-brands-sec .GUERLAIN,
+.all-brands-sec .GIORGIO-ARMANI,
+.all-brands-sec .VERSACE,
+.all-brands-sec .GIVENCHY {
   height: 66vh;
   background: #faf7f2;
   margin: 40px;
   border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-.logo {
+.all-brands-sec .dolce .logo,
+.all-brands-sec .calvin .logo,
+.all-brands-sec .bvlgari .logo,
+.all-brands-sec .christiandior .logo,
+.all-brands-sec .YVESSAINTLAURENT .logo,
+.all-brands-sec .BURBERRY .logo,
+.all-brands-sec .GUERLAIN .logo,
+.all-brands-sec .GIORGIO-ARMANI .logo,
+.all-brands-sec .VERSACE .logo,
+.all-brands-sec .GIVENCHY .logo {
   height: 20vh;
   width: 100%;
   display: flex;
 }
-.logo-left {
+.all-brands-sec .dolce .logo-left,
+.all-brands-sec .calvin .logo-left,
+.all-brands-sec .bvlgari .logo-left,
+.all-brands-sec .christiandior .logo-left,
+.all-brands-sec .YVESSAINTLAURENT .logo-left,
+.all-brands-sec .BURBERRY .logo-left,
+.all-brands-sec .GUERLAIN .logo-left,
+.all-brands-sec .GIORGIO-ARMANI .logo-left,
+.all-brands-sec .VERSACE .logo-left,
+.all-brands-sec .GIVENCHY .logo-left {
   width: 12vw;
   height: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.logo-right {
+.all-brands-sec .dolce .logo-left .image-logo,
+.all-brands-sec .calvin .logo-left .image-logo,
+.all-brands-sec .bvlgari .logo-left .image-logo,
+.all-brands-sec .christiandior .logo-left .image-logo,
+.all-brands-sec .YVESSAINTLAURENT .logo-left .image-logo,
+.all-brands-sec .BURBERRY .logo-left .image-logo,
+.all-brands-sec .GUERLAIN .logo-left .image-logo,
+.all-brands-sec .GIORGIO-ARMANI .logo-left .image-logo,
+.all-brands-sec .VERSACE .logo-left .image-logo,
+.all-brands-sec .GIVENCHY .logo-left .image-logo {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid #302aaf;
+}
+.all-brands-sec .dolce .logo-left .image-logo img,
+.all-brands-sec .calvin .logo-left .image-logo img,
+.all-brands-sec .bvlgari .logo-left .image-logo img,
+.all-brands-sec .christiandior .logo-left .image-logo img,
+.all-brands-sec .YVESSAINTLAURENT .logo-left .image-logo img,
+.all-brands-sec .BURBERRY .logo-left .image-logo img,
+.all-brands-sec .GUERLAIN .logo-left .image-logo img,
+.all-brands-sec .GIORGIO-ARMANI .logo-left .image-logo img,
+.all-brands-sec .VERSACE .logo-left .image-logo img,
+.all-brands-sec .GIVENCHY .logo-left .image-logo img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.all-brands-sec .dolce .logo-right,
+.all-brands-sec .calvin .logo-right,
+.all-brands-sec .bvlgari .logo-right,
+.all-brands-sec .christiandior .logo-right,
+.all-brands-sec .YVESSAINTLAURENT .logo-right,
+.all-brands-sec .BURBERRY .logo-right,
+.all-brands-sec .GUERLAIN .logo-right,
+.all-brands-sec .GIORGIO-ARMANI .logo-right,
+.all-brands-sec .VERSACE .logo-right,
+.all-brands-sec .GIVENCHY .logo-right {
   height: 100%;
   width: 100%;
   padding-left: 24px;
@@ -1599,35 +1652,29 @@ body {
   flex-direction: column;
   justify-content: center;
 }
-
-.image-logo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 5px solid #302aaf;
-}
-.image-logo img {
-  height: 100%;
-  width: 100%;
-  border-radius: 50%;
-}
-
-.card-brand {
+.all-brands-sec .dolce .card-brand,
+.all-brands-sec .calvin .card-brand,
+.all-brands-sec .bvlgari .card-brand,
+.all-brands-sec .christiandior .card-brand,
+.all-brands-sec .YVESSAINTLAURENT .card-brand,
+.all-brands-sec .BURBERRY .card-brand,
+.all-brands-sec .GUERLAIN .card-brand,
+.all-brands-sec .GIORGIO-ARMANI .card-brand,
+.all-brands-sec .VERSACE .card-brand,
+.all-brands-sec .GIVENCHY .card-brand {
   height: 46vh;
   width: 100%;
 }
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.scroll-card {
+.all-brands-sec .dolce .card-brand .scroll-card,
+.all-brands-sec .calvin .card-brand .scroll-card,
+.all-brands-sec .bvlgari .card-brand .scroll-card,
+.all-brands-sec .christiandior .card-brand .scroll-card,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card,
+.all-brands-sec .BURBERRY .card-brand .scroll-card,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card,
+.all-brands-sec .VERSACE .card-brand .scroll-card,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card {
   height: 100%;
   display: flex;
   margin-left: 24px;
@@ -1639,18 +1686,43 @@ body {
   -ms-overflow-style: none;
   white-space: nowrap;
 }
-.scroll-card::-webkit-scrollbar {
+.all-brands-sec .dolce .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .calvin .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .bvlgari .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .christiandior .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .BURBERRY .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .VERSACE .card-brand .scroll-card::-webkit-scrollbar,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card::-webkit-scrollbar {
   display: none;
 }
-
-.scroll-item {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item {
   display: inline-block;
   width: 200px;
   margin-right: 24px;
   vertical-align: top;
 }
-
-.perfume-card {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card {
   width: 200px;
   background: white;
   height: 320px;
@@ -1664,34 +1736,88 @@ body {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   white-space: normal;
 }
-.perfume-card:hover {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card:hover,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card:hover {
   transform: scale(1.04, 1.04);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
-.perfume-card h4 {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card h4,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card h4 {
   text-decoration: none;
   color: black;
   font-size: 18px;
   font-weight: bold;
   text-align: center;
 }
-.perfume-card p {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card p,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card p {
   color: black;
   text-align: center;
   padding: 0 8px;
 }
-.perfume-card .image-card {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card .image-card,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card .image-card {
   height: 240px;
   width: 100%;
   padding: 10px;
   margin-bottom: 16px;
 }
-.perfume-card .image-card img {
+.all-brands-sec .dolce .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .calvin .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .bvlgari .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .christiandior .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .YVESSAINTLAURENT .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .BURBERRY .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .GUERLAIN .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .GIORGIO-ARMANI .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .VERSACE .card-brand .scroll-card .scroll-item .perfume-card .image-card img,
+.all-brands-sec .GIVENCHY .card-brand .scroll-card .scroll-item .perfume-card .image-card img {
   height: 100%;
   width: 100%;
 }
-
-.brand-section {
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.all-brands-sec .brand-section {
   background-color: #fff;
   border-radius: 12px;
   padding: 32px;

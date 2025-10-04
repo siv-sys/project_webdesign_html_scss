@@ -22,217 +22,219 @@ body {
   width: 100vw;
   display: flex;
   flex-direction: column;
-}
 
-.head-brands {
-  height: 20vh;
-  width: 100vw;
-  background: rgb(183, 121, 121);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 
-  h1 {
-    color: #4B4B9B;
-  }
-}
-
-.tittle-brand {
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-  overflow: hidden;
-  white-space: nowrap;
-
-  a {
-    text-decoration: none;
-    color: black;
-    border-left: 1px solid black;
-    padding-left: 8px;
-    position: relative;
-    transition: color 0.3s ease-in-out;
-
-    &:hover {
-      background: none;
-    }
-
-    &:nth-child(1),
-    &:nth-child(2),
-    &:nth-child(3) {
-      font-family: Helvetica, Arial, sans-serif;
-    }
-
-    &:nth-child(4),
-    &:nth-child(5) {
-      font-family: serif;
-    }
-
-    &:nth-child(6),
-    &:nth-child(7) {
-      font-family: sans-serif;
-    }
-  }
-}
-
-.dolce,
-.calvin,
-.bvlgari,
-.christiandior,
-.YVESSAINTLAURENT,
-.BURBERRY,
-.GUERLAIN,
-.GIORGIO-ARMANI,
-.VERSACE,
-.GIVENCHY {
-  height: 66vh;
-  background: #faf7f2;
-  margin: 40px;
-  border-radius: 16px;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
-
-.logo {
-  height: 20vh;
-  width: 100%;
-  display: flex;
-
-  &-left {
-    width: 12vw;
-    height: 100%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-  &-right {
-    height: 100%;
-    width: 100%;
-    padding-left: 24px;
+  .head-brands {
+    height: 20vh;
+    width: 100vw;
+    background: rgb(183, 121, 121);
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-  }
-}
+    align-items: center;
 
-.image-logo {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  border: 5px solid #302aaf;
-
-  img {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-  }
-}
-
-.card-brand {
-  height: 46vh;
-  width: 100%;
-}
-
-@keyframes fade-in-up {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.scroll-card {
-  height: 100%;
-  display: flex;
-  margin-left: 24px;
-  margin-right: 24px;
-  padding-left: 16px;
-  align-items: center;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-  white-space: nowrap;
-
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.scroll-item {
-  display: inline-block;
-  width: 200px;
-  margin-right: 24px;
-  vertical-align: top;
-}
-
-.perfume-card {
-
-  width: 200px;
-  background: white;
-  height: 320px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  padding-bottom: 16px;
-  transition: 0.3s ease-in-out;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  white-space: normal;
-
-  &:hover {
-    transform: scale(1.04, 1.04);
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-      rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  h4 {
-    text-decoration: none;
-    color: black;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-  }
-
-  p {
-    color: black;
-    text-align: center;
-    padding: 0 8px;
-  }
-
-  .image-card {
-    height: 240px;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 16px;
-
-    img {
-      height: 100%;
-      width: 100%;
+    h1 {
+      color: #4B4B9B;
     }
 
+    .tittle-brand {
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 8px;
+      overflow: hidden;
+      white-space: nowrap;
+
+      a {
+        text-decoration: none;
+        color: black;
+        border-left: 1px solid black;
+        padding-left: 8px;
+        position: relative;
+        transition: color 0.3s ease-in-out;
+
+        &:hover {
+          background: none;
+          color: #302aaf;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          font-family: Helvetica, Arial, sans-serif;
+        }
+
+        &:nth-child(4),
+        &:nth-child(5) {
+          font-family: serif;
+        }
+
+        &:nth-child(6),
+        &:nth-child(7) {
+          font-family: sans-serif;
+        }
+      }
+    }
+  }
+
+
+
+  .dolce,
+  .calvin,
+  .bvlgari,
+  .christiandior,
+  .YVESSAINTLAURENT,
+  .BURBERRY,
+  .GUERLAIN,
+  .GIORGIO-ARMANI,
+  .VERSACE,
+  .GIVENCHY {
+    height: 66vh;
+    background: #faf7f2;
+    margin: 40px;
+    border-radius: 16px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .logo {
+      height: 20vh;
+      width: 100%;
+      display: flex;
+
+      &-left {
+        width: 12vw;
+        height: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+
+        .image-logo {
+          height: 100px;
+          width: 100px;
+          border-radius: 50%;
+          border: 5px solid #302aaf;
+
+          img {
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+          }
+        }
+
+      }
+
+      &-right {
+        height: 100%;
+        width: 100%;
+        padding-left: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+    }
+
+    .card-brand {
+      height: 46vh;
+      width: 100%;
+
+      .scroll-card {
+        height: 100%;
+        display: flex;
+        margin-left: 24px;
+        margin-right: 24px;
+        padding-left: 16px;
+        align-items: center;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        white-space: nowrap;
+
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+
+        .scroll-item {
+          display: inline-block;
+          width: 200px;
+          margin-right: 24px;
+          vertical-align: top;
+
+          .perfume-card {
+
+            width: 200px;
+            background: white;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            padding-bottom: 16px;
+            transition: 0.3s ease-in-out;
+            border-radius: 8px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            white-space: normal;
+
+            &:hover {
+              transform: scale(1.04, 1.04);
+              box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+                rgba(0, 0, 0, 0.22) 0px 10px 10px;
+            }
+
+            h4 {
+              text-decoration: none;
+              color: black;
+              font-size: 18px;
+              font-weight: bold;
+              text-align: center;
+            }
+
+            p {
+              color: black;
+              text-align: center;
+              padding: 0 8px;
+            }
+
+            .image-card {
+              height: 240px;
+              width: 100%;
+              padding: 10px;
+              margin-bottom: 16px;
+
+              img {
+                height: 100%;
+                width: 100%;
+              }
+
+            }
+
+          }
+        }
+      }
+    }
+
+    @keyframes fade-in-up {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .brand-section {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 32px;
+    margin-bottom: 48px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
 
 }
-
-
-.brand-section {
-  background-color: #fff;
-  border-radius: 12px;
-  padding: 32px;
-  margin-bottom: 48px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
 
 @media (max-width: 1024px) and (min-width: 768px) {
   .poster {
@@ -281,7 +283,7 @@ body {
       margin: 24px;
       padding: 16px;
 
-      .logo { 
+      .logo {
         height: 12vh;
         flex-direction: row;
         align-items: center;
