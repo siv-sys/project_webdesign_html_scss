@@ -313,7 +313,6 @@
     }
 
     .shop-info {
-
         flex-direction: column;
         padding: 16px 40px;
         height: auto;
@@ -483,34 +482,8 @@
 }
 
 @media (max-width: 480px) {
-    .logo-website {
-        display: none;
-    }
-
-    .bg-nav {
-        height: 40px;
-    }
-
-    .shop-tittle {
-        margin-top: 26px;
-        font-size: 14px;
-        padding-left: 18px;
-
-        span {
-            font-size: 20px;
-        }
-    }
-
     .shop-info {
-        height: auto;
         .info-left {
-            .info-left-image {
-                width: 100%;
-                img {
-                    width: 90vw;
-                    height: auto;
-                }
-            }
             .info-left-rate-eter{
                 .i-had-it, .i-have-it, .i-want-it{
                     .it-left{
@@ -529,12 +502,8 @@
         }
 
         .info-right {
-            width: 100%;
-            height: auto;
-            .info-logo{
-                img {
-                width: 100px;
-            } 
+            .main-accords-eter{
+                width: 100%;
             }
             .info-ingredient-eter-1{
                 width: 100%;
@@ -569,33 +538,5 @@
 
         }
 
-    }
-
-    .shop-sell {
-        height: auto;
-        .shop-sell-left{
-            .new{
-                margin-bottom: 10px;
-            }
-            .wrap{
-                .favorite{
-                    text-decoration: none;
-                    border-bottom: none;
-                }
-            }
-            .btn-buy{
-                margin-bottom: 24px;
-            }
-        }
-        .shop-sell-right {
-            .view-full{
-                color: black;
-            }
-            .image-change-box {
-                .image-change-bg {
-                    height: 320px;
-                }
-            }
-        }
     }
 }

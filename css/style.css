@@ -2969,28 +2969,49 @@ body {
   }
 }
 @media (max-width: 480px) {
+  /* Hide logo and adjust navbar */
   .logo-website {
     display: none;
   }
   .bg-nav {
     height: 40px;
   }
+  /* Shop Title */
   .shop-tittle {
     font-size: 14px;
-    padding-left: 18px;
+    padding-left: 16px;
+    height: auto;
+    line-height: 1.4;
   }
   .shop-tittle span {
     font-size: 20px;
   }
+  /* Shop Info Section */
   .shop-info {
-    height: auto;
+    flex-direction: column;
+    padding: 12px;
+  }
+  .shop-info .info-left {
+    width: 100%;
   }
   .shop-info .info-left .info-left-image {
     width: 100%;
+    text-align: center;
   }
   .shop-info .info-left .info-left-image img {
-    width: 90vw;
+    width: 90%;
+    max-width: 350px;
     height: auto;
+  }
+  .shop-info .info-left .info-left-rate {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .shop-info .info-left .info-left-rate .i-had-it,
+  .shop-info .info-left .info-left-rate .i-have-it,
+  .shop-info .info-left .info-left-rate .i-want-it {
+    align-items: center;
   }
   .shop-info .info-left .info-left-rate .i-had-it .it-left .it-left-round,
   .shop-info .info-left .info-left-rate .i-have-it .it-left .it-left-round,
@@ -3002,18 +3023,27 @@ body {
   .shop-info .info-left .info-left-rate .i-had-it .it-bottom,
   .shop-info .info-left .info-left-rate .i-have-it .it-bottom,
   .shop-info .info-left .info-left-rate .i-want-it .it-bottom {
-    width: 80px;
-    margin-left: 16px;
+    width: auto;
+    min-width: 80px;
+    margin-left: 12px;
+    font-size: 12px;
+    text-align: center;
   }
   .shop-info .info-right {
     width: 100%;
     height: auto;
+    margin: 16px 0 0 0;
+  }
+  .shop-info .info-right .info-logo {
+    text-align: center;
+    margin-bottom: 12px;
   }
   .shop-info .info-right .info-logo img {
-    width: 100px;
+    width: 90px;
+    height: auto;
   }
   .shop-info .info-right .main-accords {
-    background: #000;
+    width: 100%;
   }
   .shop-info .info-right .info-ingredient-1 {
     width: 100%;
@@ -3045,8 +3075,14 @@ body {
   .shop-info .info-right .info-ingredient-10 {
     width: 30%;
   }
+  /* Shop Sell Section */
   .shop-sell {
+    flex-direction: column;
     height: auto;
+    padding: 12px;
+  }
+  .shop-sell .shop-sell-left {
+    width: 100%;
   }
   .shop-sell .shop-sell-left .new {
     margin-bottom: 10px;
@@ -3056,10 +3092,17 @@ body {
     border-bottom: none;
   }
   .shop-sell .shop-sell-left .btn-buy {
-    margin-bottom: 24px;
+    margin: 16px 0 24px 0;
+    width: 100%;
+    max-width: 320px;
+  }
+  .shop-sell .shop-sell-right {
+    width: 100%;
+    margin-top: 16px;
   }
   .shop-sell .shop-sell-right .image-change-box .image-change-bg {
-    height: 320px;
+    height: 280px;
+    max-height: 320px;
   }
 }
 .shop-info .info-right {
@@ -3457,30 +3500,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .logo-website {
-    display: none;
-  }
-  .bg-nav {
-    height: 40px;
-  }
-  .shop-tittle {
-    margin-top: 26px;
-    font-size: 14px;
-    padding-left: 18px;
-  }
-  .shop-tittle span {
-    font-size: 20px;
-  }
-  .shop-info {
-    height: auto;
-  }
-  .shop-info .info-left .info-left-image {
-    width: 100%;
-  }
-  .shop-info .info-left .info-left-image img {
-    width: 90vw;
-    height: auto;
-  }
   .shop-info .info-left .info-left-rate-savage .i-had-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-savage .i-have-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-savage .i-want-it .it-left .it-left-round {
     height: 40px;
     width: 40px;
@@ -3490,12 +3509,8 @@ body {
     width: 80px;
     margin-left: 16px;
   }
-  .shop-info .info-right {
+  .shop-info .info-right .main-accords-savage {
     width: 100%;
-    height: auto;
-  }
-  .shop-info .info-right .info-logo img {
-    width: 100px;
   }
   .shop-info .info-right .info-ingredient-men-1 {
     width: 100%;
@@ -3523,25 +3538,6 @@ body {
   }
   .shop-info .info-right .info-ingredient-men-9 {
     width: 35%;
-  }
-  .shop-sell {
-    height: auto;
-  }
-  .shop-sell .shop-sell-left .new {
-    margin-bottom: 10px;
-  }
-  .shop-sell .shop-sell-left .wrap .favorite {
-    text-decoration: none;
-    border-bottom: none;
-  }
-  .shop-sell .shop-sell-left .btn-buy {
-    margin-bottom: 24px;
-  }
-  .shop-sell .shop-sell-right .view-full {
-    color: black;
-  }
-  .shop-sell .shop-sell-right .image-change-box .image-change-bg {
-    height: 320px;
   }
 }
 .shop-info .info-right {
@@ -3902,30 +3898,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .logo-website {
-    display: none;
-  }
-  .bg-nav {
-    height: 40px;
-  }
-  .shop-tittle {
-    margin-top: 26px;
-    font-size: 14px;
-    padding-left: 18px;
-  }
-  .shop-tittle span {
-    font-size: 20px;
-  }
-  .shop-info {
-    height: auto;
-  }
-  .shop-info .info-left .info-left-image {
-    width: 100%;
-  }
-  .shop-info .info-left .info-left-image img {
-    width: 90vw;
-    height: auto;
-  }
   .shop-info .info-left .info-left-rate-light-blue .i-had-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-light-blue .i-have-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-light-blue .i-want-it .it-left .it-left-round {
     height: 40px;
     width: 40px;
@@ -3935,12 +3907,8 @@ body {
     width: 80px;
     margin-left: 16px;
   }
-  .shop-info .info-right {
+  .shop-info .info-right .main-accords-light-blue {
     width: 100%;
-    height: auto;
-  }
-  .shop-info .info-right .info-logo img {
-    width: 100px;
   }
   .shop-info .info-right .info-ingredient-light-blue-1 {
     width: 100%;
@@ -3968,22 +3936,6 @@ body {
   }
   .shop-info .info-right .info-ingredient-light-blue-9 {
     width: 35%;
-  }
-  .shop-sell {
-    height: auto;
-  }
-  .shop-sell .shop-sell-left .new {
-    margin-bottom: 10px;
-  }
-  .shop-sell .shop-sell-left .wrap .favorite {
-    text-decoration: none;
-    border-bottom: none;
-  }
-  .shop-sell .shop-sell-left .btn-buy {
-    margin-bottom: 24px;
-  }
-  .shop-sell .shop-sell-right .image-change-box .image-change-bg {
-    height: 320px;
   }
 }
 .shop-info .info-right {
@@ -4391,30 +4343,6 @@ body {
   }
 }
 @media (max-width: 480px) {
-  .logo-website {
-    display: none;
-  }
-  .bg-nav {
-    height: 40px;
-  }
-  .shop-tittle {
-    margin-top: 26px;
-    font-size: 14px;
-    padding-left: 18px;
-  }
-  .shop-tittle span {
-    font-size: 20px;
-  }
-  .shop-info {
-    height: auto;
-  }
-  .shop-info .info-left .info-left-image {
-    width: 100%;
-  }
-  .shop-info .info-left .info-left-image img {
-    width: 90vw;
-    height: auto;
-  }
   .shop-info .info-left .info-left-rate-eter .i-had-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-eter .i-have-it .it-left .it-left-round, .shop-info .info-left .info-left-rate-eter .i-want-it .it-left .it-left-round {
     height: 40px;
     width: 40px;
@@ -4424,12 +4352,8 @@ body {
     width: 80px;
     margin-left: 16px;
   }
-  .shop-info .info-right {
+  .shop-info .info-right .main-accords-eter {
     width: 100%;
-    height: auto;
-  }
-  .shop-info .info-right .info-logo img {
-    width: 100px;
   }
   .shop-info .info-right .info-ingredient-eter-1 {
     width: 100%;
@@ -4460,25 +4384,6 @@ body {
   }
   .shop-info .info-right .info-ingredient-eter-10 {
     width: 30%;
-  }
-  .shop-sell {
-    height: auto;
-  }
-  .shop-sell .shop-sell-left .new {
-    margin-bottom: 10px;
-  }
-  .shop-sell .shop-sell-left .wrap .favorite {
-    text-decoration: none;
-    border-bottom: none;
-  }
-  .shop-sell .shop-sell-left .btn-buy {
-    margin-bottom: 24px;
-  }
-  .shop-sell .shop-sell-right .view-full {
-    color: black;
-  }
-  .shop-sell .shop-sell-right .image-change-box .image-change-bg {
-    height: 320px;
   }
 }
 .container {

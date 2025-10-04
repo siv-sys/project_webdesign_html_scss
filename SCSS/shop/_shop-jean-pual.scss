@@ -770,8 +770,8 @@
         }
     }
 }
-
 @media (max-width: 480px) {
+    /* Hide logo and adjust navbar */
     .logo-website {
         display: none;
     }
@@ -780,33 +780,47 @@
         height: 40px;
     }
 
+    /* Shop Title */
     .shop-tittle {
         font-size: 14px;
-        padding-left: 18px;
+        padding-left: 16px;
+        height: auto;
+        line-height: 1.4;
 
         span {
             font-size: 20px;
         }
     }
 
+    /* Shop Info Section */
     .shop-info {
-        height: auto;
+        flex-direction: column;
+        padding: 12px;
 
         .info-left {
+            width: 100%;
+
             .info-left-image {
                 width: 100%;
+                text-align: center;
 
                 img {
-                    width: 90vw;
+                    width: 90%;
+                    max-width: 350px;
                     height: auto;
                 }
             }
 
             .info-left-rate {
+                display: flex;
+                gap: 12px;
+                margin-top: 12px;
 
                 .i-had-it,
                 .i-have-it,
                 .i-want-it {
+                    align-items: center;
+
                     .it-left {
                         .it-left-round {
                             height: 40px;
@@ -816,8 +830,11 @@
                     }
 
                     .it-bottom {
-                        width: 80px;
-                        margin-left: 16px;
+                        width: auto;
+                        min-width: 80px;
+                        margin-left: 12px;
+                        font-size: 12px;
+                        text-align: center;
                     }
                 }
             }
@@ -826,65 +843,43 @@
         .info-right {
             width: 100%;
             height: auto;
+            margin: 16px 0 0 0;
 
             .info-logo {
+                text-align: center;
+                margin-bottom: 12px;
+
                 img {
-                    width: 100px;
+                    width: 90px;
+                    height: auto;
                 }
             }
 
             .main-accords {
-                background: #000;
-            }
-
-            .info-ingredient-1 {
                 width: 100%;
             }
-
-            .info-ingredient-2 {
-                width: 95%;
-            }
-
-            .info-ingredient-3 {
-                width: 85%;
-            }
-
-            .info-ingredient-4 {
-                width: 80%;
-            }
-
-            .info-ingredient-5 {
-                width: 60%;
-            }
-
-            .info-ingredient-6 {
-                width: 55%;
-            }
-
-            .info-ingredient-7 {
-                width: 50%;
-            }
-
-            .info-ingredient-8 {
-                width: 40%;
-            }
-
-            .info-ingredient-9 {
-                width: 35%;
-            }
-
-            .info-ingredient-10 {
-                width: 30%;
-            }
-
+            .info-ingredient-1 { width: 100%; }
+            .info-ingredient-2 { width: 95%; }
+            .info-ingredient-3 { width: 85%; }
+            .info-ingredient-4 { width: 80%; }
+            .info-ingredient-5 { width: 60%; }
+            .info-ingredient-6 { width: 55%; }
+            .info-ingredient-7 { width: 50%; }
+            .info-ingredient-8 { width: 40%; }
+            .info-ingredient-9 { width: 35%; }
+            .info-ingredient-10 { width: 30%; }
         }
-
     }
 
+    /* Shop Sell Section */
     .shop-sell {
+        flex-direction: column;
         height: auto;
+        padding: 12px;
 
         .shop-sell-left {
+            width: 100%;
+
             .new {
                 margin-bottom: 10px;
             }
@@ -897,14 +892,20 @@
             }
 
             .btn-buy {
-                margin-bottom: 24px;
+                margin: 16px 0 24px 0;
+                width: 100%;
+                max-width: 320px;
             }
         }
 
         .shop-sell-right {
+            width: 100%;
+            margin-top: 16px;
+
             .image-change-box {
                 .image-change-bg {
-                    height: 320px;
+                    height: 280px;
+                    max-height: 320px;
                 }
             }
         }
